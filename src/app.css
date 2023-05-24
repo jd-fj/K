@@ -27,3 +27,13 @@
 .active {
   color: red;
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px; /* Adjust this value to increase or decrease the line thickness */
+  height: 100%;
+  background-color: black; /* Change this to your desired line color */
+}

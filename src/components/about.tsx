@@ -1,4 +1,7 @@
-function About() {
+// about.tsx
+import { FunctionComponent } from 'preact';
+
+const About: FunctionComponent = () => {
   return (
     <div>
       <h1>About</h1>
