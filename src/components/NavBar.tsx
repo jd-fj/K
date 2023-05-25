@@ -1,10 +1,9 @@
 // NavBar.tsx
-import { Link } from 'preact-router/match';
 import { FunctionalComponent } from 'preact';
 
 const NavBar: FunctionalComponent = () => {
   return (
-    <nav className="flex fixed top-0 sm:justify-center space-x-4">
+      <nav className="fixed top-0 left-0 right-0">
       {[
         ['Home', '/'],
         ['About', '/about'],

@@ -1,11 +1,7 @@
 // home.tsx
 import { FunctionComponent } from 'preact';
 
-interface HomeProps {
-  path: string;
-}
-
-const Home: FunctionComponent<HomeProps> = () => {
+const Home: FunctionComponent = () => {
   return (
     <div>
       <h1>Home</h1>
