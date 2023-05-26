@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jd-fj.github.io/K/",
+  "homepage": "https://jd-fj.github.io/K",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

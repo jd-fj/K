@@ -1,7 +1,12 @@
 #app {
-  max-width: 1280px;
+  
+  /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  text-align: center; */
+  width: 100vw; 
+  max-width: 100%;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -36,4 +41,10 @@ body::before {
   width: 1px; /* Adjust this value to increase or decrease the line thickness */
   height: 100%;
   background-color: black; /* Change this to your desired line color */
+}
+
+#wave_tank polygon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
