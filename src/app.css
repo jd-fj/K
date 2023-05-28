@@ -33,14 +33,18 @@
   color: red;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: absolute;
   top: 0;
   left: 50%;
-  width: 1px; /* Adjust this value to increase or decrease the line thickness */
+  width: 1px; 
   height: 100%;
-  background-color: black; /* Change this to your desired line color */
+  background-color: black;
+} */
+
+.st0 {
+  fill: rgba(151, 197, 53, 0.665);
 }
 
 #wave_tank polygon {
