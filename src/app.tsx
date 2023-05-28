@@ -8,7 +8,7 @@ import NavBar from './components/NavBar';
 import Cute from './components/Cute';
 import Reiki from './components/Reiki';
 import Vintage from './components/Vintage';
-import Mush from './assets/mush'
+// import Mush from './assets/mush'
 
 
 export function App() {
