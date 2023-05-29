@@ -1,4 +1,4 @@
-// Cute.tsx
+// Film.tsx
 import { FunctionComponent } from 'preact';
 
 const Cute: FunctionComponent = () => {

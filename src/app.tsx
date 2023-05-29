@@ -2,7 +2,7 @@
 import './app.css'
 
 import Router from 'preact-router';
-import Home from './components/home';
+import YellowFlower from './components/YellowFlower';
 import About from './components/about';
 import NavBar from './components/NavBar';
 import Film from './components/Film';
@@ -16,7 +16,7 @@ export function App() {
     <>
       <NavBar />
       <Router>
-        <Home default path="/" />
+        <YellowFlower default path="/" />
         <About path="/about" />
         <Film path="/film" />
         <Reiki path="/reiki" />
