@@ -1,5 +1,5 @@
 // SnowFall.tsx
-import { FunctionalComponent } from 'preact';
+// import { FunctionalComponent } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import KitchyFlower from '../assets/KitchyFlower';
 import './snowStyles.css';
