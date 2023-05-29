@@ -44,7 +44,7 @@ const SnowFall = () => {
     }, []);
 
     return (
-        <div className="snowfall z-20">
+        <div className="snowfall z-0">
             {flowers.map(flower => (
                 <div
                     class="flower"

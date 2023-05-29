@@ -8,7 +8,7 @@ const NavBar: FunctionalComponent = () => {
         Yellow Flower
       </a>
 
-      <div className="flex space-x-4 z-10">
+      <div className="flex space-x-4 z-0">
         {[
           ['Reiki', '/reiki'],
           ['Vintage', '/vintage'],
