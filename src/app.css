@@ -1,10 +1,10 @@
 #app {
-  
+
   /* max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center; */
-  width: 100vw; 
+  width: 100vw;
   max-width: 100%;
   /* padding: 2rem; */
   text-align: center;
@@ -14,9 +14,11 @@
   height: 6em;
   padding: 1.5em;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.tammy:hover {
   filter: drop-shadow(0 0 2em #00ff00aa);
 }
@@ -44,11 +46,34 @@
 } */
 
 .st0 {
-  fill: rgba(151, 197, 53, 0.665);
+  /* fill: rgba(151, 197, 53, 0.665); */
+  border: red solid 3px;
+}
+
+#KitchyFlower {
+  /* outline: solid red 2px; */
+
+  fill: #FFBF7F;
+  /* fill: rgb(101, 73, 22); */
+  /* fill: url(#rainbow); */
+  /* stroke: url(#rainbow); */
+  /* stroke-width: 2; */
+  opacity: .7;
 }
 
 #wave_tank polygon {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.color {
+  /* color: #FF7F7F; */
+  color: #FFBF7F;
+  color: #fff27f;
+  color: #BFFF7F;
+  color: #7FBFFF;
+  color: #A77FBF;
+  color: #BF7FBF;
+  color: #8d7240;
 }

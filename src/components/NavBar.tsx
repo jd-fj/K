@@ -7,7 +7,7 @@ const NavBar: FunctionalComponent = () => {
       {[
         ['Home', '/'], // yellow flower
         ['About', '/about'],
-        ['Cute', '/cute'], // PHOTOgraphy
+        ['Film', '/film'], // PHOTOgraphy
         ['Reiki', '/reiki'],
         ['Vintage', '/vintage'],
       ].map(([title, url]) => (
