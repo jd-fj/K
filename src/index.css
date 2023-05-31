@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -52,12 +52,11 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  /* border-color: #ff64fa; */
-  color: pink; /* makes the svg button pink*/
+  color: pink; 
 }
 button:hover {
   border-color: #646cff;
-  color: limegreen; /* makes the svg button green on hover*/
+  color: limegreen; 
 }
 button:focus,
 button:focus-visible {
@@ -75,4 +74,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

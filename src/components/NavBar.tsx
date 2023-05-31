@@ -1,3 +1,4 @@
+// NavBar.tsx
 import { FunctionalComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { Link } from 'preact-router/match';
