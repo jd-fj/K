@@ -1,6 +1,6 @@
-// NavBar.tsx
 import { FunctionalComponent } from 'preact';
 import { useState } from 'preact/hooks';
+import { Link } from 'preact-router/match';
 
 const NavBar: FunctionalComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +9,15 @@ const NavBar: FunctionalComponent = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
     <nav className="fixed top-0 left-5 flex flex-col items-center py-4 space-y-2 z-10">
-      <a href="/" className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-slate-900">
+      <Link onClick={handleLinkClick} href="/" className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-slate-900">
         Yellow Flower
-      </a>
+      </Link>
       <div className="relative">
         <button onClick={toggleMenu} className="block">
           <svg
@@ -48,9 +52,9 @@ const NavBar: FunctionalComponent = () => {
               ['Film', '/film'],
               ['About', '/about'],
             ].map(([title, url]) => (
-              <a href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-slate-900">
+              <Link onClick={handleLinkClick} key={title} href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-slate-900">
                 {title}
-              </a>
+              </Link>
             ))}
           </div>
         )}
