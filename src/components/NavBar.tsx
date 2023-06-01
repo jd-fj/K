@@ -17,11 +17,11 @@ const NavBar: FunctionalComponent = () => {
   return (
     <>
     <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-4 z-10">
-      <Link onClick={handleLinkClick} href="/" className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-slate-900 ml-5">
+      <Link onClick={handleLinkClick} href="/" className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-orange-400 ml-5">
         Yellow Flower
       </Link>
       <div className="relative mr-5">
-        <button onClick={toggleMenu} className="block">
+        <button onClick={toggleMenu} className="block rounded-lg px-3 py-2 text-slate-700 font-medium  hover:bg-yellow-100 hover:text-orange-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -54,7 +54,7 @@ const NavBar: FunctionalComponent = () => {
               ['Film', '/film'],
               ['About', '/about'],
             ].map(([title, url]) => (
-              <Link onClick={handleLinkClick} key={title} href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-slate-900">
+              <Link onClick={handleLinkClick} key={title} href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-orange-400">
                 {title}
               </Link>
             ))}
