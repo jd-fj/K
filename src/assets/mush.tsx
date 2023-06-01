@@ -1,7 +1,7 @@
 const Mush = () => (
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         x="0px" y="0px"
-        width="1728px" height="1296px" viewBox="0 0 1728 1296"
+        width="691px" height="518px" viewBox="0 0 1728 1296"
         style="enable-background:new 0 0 1728 1296;">
         <g>
             <path d="M372.33,681.86c-17.63-36.04-2.75-75.65,20.84-93.97c121.79-37.08,488.77-807.02,564.19-484.94

@@ -3,7 +3,7 @@ import { FunctionComponent } from 'preact';
 
 const Reiki: FunctionComponent = () => {
   return (
-    <div>
+    <div className="flex items-center justify-center h-screen">
       <h1>Reiki</h1>
       <p>This is the Reiki page</p>
     </div>

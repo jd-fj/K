@@ -22,7 +22,7 @@ export function App() {
         <Reiki path="/reiki" />
         <Vintage path="/vintage" />
       </Router> 
-      {/* <Mush />
+      {/* <Mush /> */}
       {/* <KitchyFlower /> */}
     </>
   )
