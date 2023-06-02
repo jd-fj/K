@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'preact';
-import Mush from '../assets/mush';
+import Mush from '../assets/Mush';
 
 const Film: FunctionComponent = () => {
   return (

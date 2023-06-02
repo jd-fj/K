@@ -65,7 +65,7 @@ const SnowFall = () => {
                         top: `${flower.y}px`,
                     }}
                 >
-                    <KitchyFlower />
+                    <KitchyFlower fill="#FFBF7F" />
                 </div>
             ))}
         </div>
