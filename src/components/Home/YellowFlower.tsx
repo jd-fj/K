@@ -1,6 +1,4 @@
-// YellowFlower.tsx
 import { FunctionalComponent } from 'preact';
-// import KitchyFlower from '../assets/KitchyFlower';
 import SnowFall from './SnowFall';
 
 const YellowFlower: FunctionalComponent = () => {

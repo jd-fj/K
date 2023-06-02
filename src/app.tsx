@@ -2,7 +2,7 @@
 import './app.css'
 
 import Router from 'preact-router';
-import YellowFlower from './components/YellowFlower';
+import YellowFlower from './components/Home/YellowFlower';
 import About from './components/About';
 import NavBar from './components/NavBar';
 import Film from './components/Film';
