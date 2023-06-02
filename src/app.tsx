@@ -3,7 +3,7 @@ import './app.css'
 
 import Router from 'preact-router';
 import YellowFlower from './components/Home/YellowFlower';
-import About from './components/About';
+// import About from './components/About';
 import NavBar from './components/NavBar';
 import Film from './components/Film';
 import Reiki from './components/Reiki';
@@ -16,7 +16,7 @@ export function App() {
       <NavBar />
       <Router>
         <YellowFlower default path="/" />
-        <About path="/about" />
+        {/* <About path="/about" /> */}
         <Film path="/film" />
         <Reiki path="/reiki" />
         <Vintage path="/vintage" />
