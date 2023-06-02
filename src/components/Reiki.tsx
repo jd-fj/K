@@ -13,8 +13,9 @@
 // export default Reiki;
 
 import { useState } from 'preact/hooks';
+import { FunctionComponent } from 'preact';
 
-function Reiki() {
+const Reiki: FunctionComponent = () => {
     const initialColors = Array(8).fill('#000000'); // initial color is black for all squares
     const [colors, setColors] = useState<string[]>(initialColors);
 
