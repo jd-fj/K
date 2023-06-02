@@ -1,11 +1,18 @@
 // KitchyFlower.tsx
+import { FunctionComponent } from "preact";
+
 type KitchyFlowerProps = {
     fill?: string;
-  };
+};
 
-const KitchyFlower = ({ fill }) => (
-    <svg version="1.1" id="KitchyFlower" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-        width="65" height="40" viewBox="215 0 1300 1300" >
+const KitchyFlower: FunctionComponent<KitchyFlowerProps> = ({ fill = "#FFBF7F" }: KitchyFlowerProps) => (
+    <svg 
+        version="1.1" 
+        id="KitchyFlower" 
+        xmlns="http://www.w3.org/2000/svg" 
+        x="0px" y="0px"
+        width="65" height="40" viewBox="215 0 1300 1300" 
+    >
         {/* <defs>
             <linearGradient id="rainbow" x1="0%" y1="0%" x2="100%" y2="0%" spreadMethod="repeat">
                 <stop offset="0%" stop-color="#FFBF7F" />
