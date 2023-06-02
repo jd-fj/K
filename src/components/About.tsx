@@ -6,7 +6,7 @@ const About: FunctionComponent = () => {
     <div className="flex items-center justify-center h-screen">
     {/* <div className="border-8 border-red-300 flex items-center justify-center h-screen"> */}
       <div className="">
-        <h1 className="text-white-100">About</h1>
+        <h1 className="text-white-50">About</h1>
         <p>This is the About page</p>
       </div>
     </div>

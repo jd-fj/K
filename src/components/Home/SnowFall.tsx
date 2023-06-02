@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'preact/hooks';
 import KitchyFlower from '../../assets/KitchyFlower';
+import './snowStyles.css'
 
 type Flower = {
     x: number;
