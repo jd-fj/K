@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import { FunctionComponent } from 'preact';
 
 const Palette: FunctionComponent = () => {
-    const initialColors = Array(8).fill('#000000'); // initial color is black for all squares
+    const initialColors = Array(8).fill('000000'); // initial color is black for all squares
     const [colors, setColors] = useState<string[]>(initialColors);
 
     const handleChange = (index: number) => (e: any) => {
@@ -18,7 +18,7 @@ const Palette: FunctionComponent = () => {
     }
 
     return (
-        <div className="flex  items-center justify-center h-screen">
+        <div className="flex items-end justify-center h-screen">
             {colors.map((color, index) => (
                 <div key={index} className="">
                     <input 
@@ -27,9 +27,10 @@ const Palette: FunctionComponent = () => {
                         onInput={handleChange(index)}
                         onKeyPress={handleKeyPress}
                         placeholder="Enter hex color..."
+                        className="bg-white-50"
                     />
-                    <svg height="100" width="100">
-                        <rect width="100" height="100" fill={color} />
+                    <svg width="100" height="500">
+                        <rect width="100" height="500" fill={`#${color}`} />
                     </svg>
                 </div>
             ))}
