@@ -53,6 +53,7 @@ const NavBar: FunctionalComponent = () => {
                 ['Vintage', '/vintage'],
                 ['Film', '/film'],
                 ['About', '/about'],
+                ['Palette', '/palette']
               ].map(([title, url]) => (
                 <Link onClick={handleLinkClick} key={title} href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-orange-400">
                   {title}
