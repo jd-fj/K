@@ -20,7 +20,7 @@ const Palette: FunctionComponent = () => {
   }
 
   return (
-    <div className="grid grid-cols-8 gap-5 items-end justify-center h-screen">
+    <div className="grid grid-cols-8 items-end justify-center h-screen">
       {colors.map((color, index) => (
         <div key={index} className="">
           <input
@@ -31,7 +31,7 @@ const Palette: FunctionComponent = () => {
             placeholder="hex color..."
             className="w-full h-10 bg-transparent"
           />
-          <svg className="w-full h-[31.25rem]">
+          <svg className="w-full h-[25rem] px-3">
             <rect className="w-full h-full" fill={`#${color}`} />
           </svg>
         </div>
