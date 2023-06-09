@@ -20,7 +20,7 @@ const Palette: FunctionComponent = () => {
   }
 
   return (
-    <div className="grid grid-cols-8 gap-2 items-end justify-center h-screen">
+    <div className="grid grid-cols-8 gap-5 items-end justify-center h-screen">
       {colors.map((color, index) => (
         <div key={index} className="">
           <input
