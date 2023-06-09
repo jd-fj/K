@@ -7,8 +7,6 @@ const Palette: FunctionComponent = () => {
 
   // change the color of the input that was changed
   const handleChange = (index: number) => (e: any) => {
-    console.log("INdex? ", index)
-    console.log("Colors? ", colors)
     const newColors = [...colors];
     newColors[index] = e.target.value;
     setColors(newColors);
@@ -22,7 +20,7 @@ const Palette: FunctionComponent = () => {
   }
 
   return (
-    <div className="flex items-end justify-center h-screen space-x-4">
+    <div className="grid grid-cols-8 gap-2 items-end justify-center h-screen">
       {colors.map((color, index) => (
         <div key={index} className="">
           <input
@@ -30,11 +28,11 @@ const Palette: FunctionComponent = () => {
             value={color}
             onInput={handleChange(index)}
             onKeyPress={handleKeyPress}
-            placeholder="Enter hex color..."
-            className="bg-white-50 w-28"
+            placeholder="hex color..."
+            className="w-full h-10 bg-transparent"
           />
-          <svg width="7rem" height="500">
-            <rect width="7rem" height="500" fill={`#${color}`} />
+          <svg className="w-full h-[31.25rem]">
+            <rect className="w-full h-full" fill={`#${color}`} />
           </svg>
         </div>
       ))}

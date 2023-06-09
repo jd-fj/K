@@ -1,0 +1,15 @@
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: end;
+}
+
+.color-display {
+  aspect-ratio: 1/7;
+  width: 100%;
+  max-width: 7rem;
+}
