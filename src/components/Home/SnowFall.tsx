@@ -1,3 +1,4 @@
+// SnowFall.tsx
 import { useEffect, useState, useRef } from 'preact/hooks';
 import KitchyFlower from '../../assets/KitchyFlower';
 import './snowStyles.css'
@@ -17,8 +18,8 @@ const SnowFall = () => {
         const newFlowers = [];
         for (let i = 0; i < flowerCount; i++) {
             const x = Math.random() * window.innerWidth;
-            const y = -100;  // Start the flowers from the top of the screen
-            newFlowers.push({ x, y, speed: Math.random() + .95  * .75 });
+            const y = Math.random() * -window.innerHeight; 
+            newFlowers.push({ x, y, speed: (Math.random() + 1)  * 2 });
         }
         setFlowers(newFlowers);
         flowersRef.current = newFlowers;
@@ -28,7 +29,7 @@ const SnowFall = () => {
         let animationFrameId: number | null = null;
         const moveFlowers = () => {
             const newFlowers = flowersRef.current.map(flower => {
-                if (flower.y + flower.speed >= window.innerHeight) {
+                if (flower.y >= window.innerHeight) {
                     // If the flower has reached the bottom, return it without updating y
                     return flower;
                 }
