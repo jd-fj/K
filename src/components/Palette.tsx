@@ -1,3 +1,4 @@
+// Palette.tsx
 import { useState } from 'preact/hooks';
 import { FunctionComponent } from 'preact';
 
@@ -20,7 +21,7 @@ const Palette: FunctionComponent = () => {
   }
 
   return (
-    <div className="grid grid-cols-8 items-end justify-center h-screen">
+    <div className="grid grid-cols-8 items-end justify-center h-screen mt-20">
       {colors.map((color, index) => (
         <div key={index} className="px-3">
           <input
