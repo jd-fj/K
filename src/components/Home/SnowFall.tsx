@@ -28,8 +28,8 @@ const SnowFall = () => {
                 y, 
                 speed: (Math.random() + 1) * 3, 
                 time: 0,
-                oscillationSpeed: (Math.random() + 1) * .1,  // adjust the range as needed
-                oscillationMagnitude: (Math.random() + 3)  * .15  // adjust the range as needed
+                oscillationSpeed: (Math.random() + 2) * .1,  // adjust the range as needed
+                oscillationMagnitude: (Math.random() + 1)  * .15  // adjust the range as needed
             });
         }
         setFlowers(newFlowers);
