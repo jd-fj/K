@@ -17,11 +17,11 @@ const NavBar: FunctionalComponent = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-4 z-10 text-2xl">
-        <Link onClick={handleLinkClick} href="/" className="rounded-lg ml-5 px-3 py-2 text-slate-700 font-semibold hover:bg-yellow-100 hover:text-orange-400 ">
+        <Link onClick={handleLinkClick} href="/" className="rounded-lg ml-5 px-3 py-2 text-amber-700 font-semibold hover:bg-yellow-100 hover:text-orange-400 ">
           Yellow Flower
         </Link>
         <div className="relative mr-5">
-          <button onClick={toggleMenu} className="block rounded-lg px-3 py-2 text-slate-700 font-medium  hover:bg-yellow-100 hover:text-orange-400">
+          <button onClick={toggleMenu} className="block rounded-lg px-3 py-2 text-amber-700 font-medium  hover:bg-yellow-100 hover:text-orange-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -55,7 +55,7 @@ const NavBar: FunctionalComponent = () => {
                 ['About', '/about'],
                 ['Palette', '/palette']
               ].map(([title, url]) => (
-                <Link onClick={handleLinkClick} key={title} href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-yellow-100 hover:text-orange-400">
+                <Link onClick={handleLinkClick} key={title} href={url} className="rounded-lg px-3 py-2 text-amber-600 font-medium hover:bg-yellow-100 hover:text-orange-400">
                   {title}
                 </Link>
               ))}

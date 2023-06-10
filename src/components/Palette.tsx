@@ -32,7 +32,7 @@ const Palette: FunctionComponent = () => {
             placeholder="hex color..."
             className="w-full h-10 bg-transparent"
           />
-          <div style={{backgroundColor: `#${color}`, height: 'calc(100vh / 1.5 - 2.5rem)'}} />
+          <div style={{backgroundColor: `#${color}`, height: 'calc(100vh / 2 - 2.5rem)'}} />
         </div>
       ))}
     </div>
