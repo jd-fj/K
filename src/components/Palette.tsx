@@ -21,9 +21,9 @@ const Palette: FunctionComponent = () => {
   }
 
   return (
-    <div className="grid grid-cols-8 items-end justify-center h-screen mt-20">
+    <div className="grid grid-cols-8 items-end h-screen">
       {colors.map((color, index) => (
-        <div key={index} className="px-3">
+        <div key={index} className="xs:px-3 px-0">
           <input
             type="text"
             value={color}
@@ -32,9 +32,7 @@ const Palette: FunctionComponent = () => {
             placeholder="hex color..."
             className="w-full h-10 bg-transparent"
           />
-          <svg className="w-full h-[25rem]">
-            <rect className="w-full h-full" fill={`#${color}`} />
-          </svg>
+          <div style={{backgroundColor: `#${color}`, height: 'calc(100vh / 1.5 - 2.5rem)'}} />
         </div>
       ))}
     </div>
