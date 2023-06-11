@@ -17,11 +17,11 @@ export function App() {
       <NavBar />
       <Router>
         <YellowFlower default path="/" />
-        <About path="/about" />
-        <Film path="/film" />
-        <Reiki path="/reiki" />
-        <Vintage path="/vintage" />
-        <Palette path="/palette" />
+        <About path="K/about" />
+        <Film path="K/film" />
+        <Reiki path="K/reiki" />
+        <Vintage path="K/vintage" />
+        <Palette path="K/palette" />
       </Router> 
       {/* <Mush /> */}
       {/* <KitchyFlower /> */}
