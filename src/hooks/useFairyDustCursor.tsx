@@ -160,7 +160,7 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
       window.addEventListener("resize", onWindowResize);
     }
 
-    function onWindowResize(e: any) {
+    function onWindowResize(_e: any) {
       width = window.innerWidth;
       height = window.innerHeight;
 
