@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     colors: {
       transparent: 'transparent',
@@ -30,6 +33,10 @@ export default {
       rose: colors.rose,
       black: colors.black,
       white: colors.white,
+      brown: {
+        100: "#974",
+        200: "#2b2521"
+      }
     },
     screens: {
       xs: "250px",
