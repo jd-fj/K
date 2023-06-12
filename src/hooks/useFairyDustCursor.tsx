@@ -1,3 +1,4 @@
+// useFairyDustCursor.tsx
 import { useEffect } from 'preact/hooks';
 
 class Particle {

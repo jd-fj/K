@@ -8,7 +8,7 @@ import NavBar from './components/NavBar';
 import Film from './components/Film';
 import Reiki from './components/Reiki';
 import Vintage from './components/Vintage';
-import Palette from './components/Palette';
+import Palette from './components/Palette/Palette';
 // import Mush from './assets/mush'
 
 export function App() {
