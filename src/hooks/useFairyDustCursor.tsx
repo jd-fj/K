@@ -2,11 +2,11 @@
 import { useEffect } from 'preact/hooks';
 
 class Particle {
-  initialLifeSpan: number;
-  lifeSpan: number;
-  velocity: { x: number, y: number };
-  position: { x: number, y: number };
-  canv: HTMLCanvasElement;
+  initialLifeSpan!: number;
+  lifeSpan!: number;
+  velocity!: { x: number, y: number };
+  position!: { x: number, y: number };
+  canv!: HTMLCanvasElement;
 
   constructor(x: number, y: number, canvasItem: HTMLCanvasElement) {
     this.reset(x, y, canvasItem);
