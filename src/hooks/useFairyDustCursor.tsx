@@ -118,8 +118,6 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
       context.textAlign = "center";
 
       possibleColors.forEach((color) => {
-        console.log("color?!: ", color);
-      
         const randomChar = chars[Math.floor(Math.random() * chars.length)]; // Select a random char from the array
         let measurements = context!.measureText(randomChar); // Use randomChar instead of char
       
