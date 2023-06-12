@@ -4,10 +4,10 @@ import KitchyFlower from '../../assets/KitchyFlower';
 import './snowStyles.css'
 
 type Flower = {
+    id: string;
     x: number;
     y: number;
     speed: number;
-    id: string;
     start: boolean;
 };
 
@@ -18,20 +18,25 @@ const SnowFall = () => {
     useEffect(() => {
         const newFlowers = [];
         for (let i = 0; i < flowerCount; i++) {
-            const x = Math.random() * window.innerWidth;
-            const y = Math.random() * window.innerHeight + 1.5 * window.innerHeight; // Start higher offscreen
+            const x = getRandomPosition(window.innerWidth);
+            const y = getRandomPosition(window.innerHeight) - 100; // Start higher offscreen
             const id = `${x}_${y}`; // Create unique id from x and y values
-            newFlowers.push({ x, y, speed: (Math.random() + 1)  * 2, id, start: false });
+            newFlowers.push({ x, y, speed: (Math.random() + 1) * 2, id, start: false });
         }
         setFlowers(newFlowers);
-
+    
         const timeoutId = setTimeout(() => {
             setFlowers(flowers => flowers.map(flower => ({ ...flower, start: true })));
         }, 100); // Start the animation after 100ms
-
+    
         return () => clearTimeout(timeoutId);
     }, []);
-
+    
+    // This function generates a random number within the range (0 to max).
+    function getRandomPosition(max: number) {
+        return Math.floor(Math.random() * (max +52 ) - 51);
+    }
+    
     return (
         <div className="snowfall z-0">
             {flowers.map((flower) => (
