@@ -4,11 +4,15 @@ import { useEffect } from 'preact/hooks';
 class Particle {
   initialLifeSpan: number;
   lifeSpan: number;
-  velocity: {x: number, y: number};
-  position: {x: number, y: number};
+  velocity: { x: number, y: number };
+  position: { x: number, y: number };
   canv: HTMLCanvasElement;
 
   constructor(x: number, y: number, canvasItem: HTMLCanvasElement) {
+    this.reset(x, y, canvasItem);
+  }
+
+  reset(x: number, y: number, canvasItem: HTMLCanvasElement) {
     const lifeSpan = Math.floor(Math.random() * 30 + 60);
     this.initialLifeSpan = lifeSpan;
     this.lifeSpan = lifeSpan;
@@ -16,7 +20,7 @@ class Particle {
       x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
       y: Math.random() * 0.7 + 0.9,
     };
-    this.position = { x: x - 6 , y: y - 10 };
+    this.position = { x: x - 6, y: y - 10 };
     this.canv = canvasItem;
   }
 
@@ -39,8 +43,27 @@ class Particle {
   }
 }
 
+class ParticlePool {
+  private readonly particles: Particle[] = [];
+  private nextAvailable = 0;
+
+  constructor(size: number, canvasItem: HTMLCanvasElement) {
+    for (let i = 0; i < size; i++) {
+      this.particles[i] = new Particle(0, 0, canvasItem);
+    }
+  }
+
+  getParticle(x: number, y: number, canvasItem: HTMLCanvasElement) {
+    const particle = this.particles[this.nextAvailable];
+    particle.reset(x, y, canvasItem);
+
+    this.nextAvailable = (this.nextAvailable + 1) % this.particles.length;
+
+    return particle;
+  }
+}
+
 export function useFairyDustCursor(options?: { colors?: string[], element?: HTMLElement }) {
-  // Hook to handle lifecycle
   useEffect(() => {
     const fairyDust = fairyDustCursor(options);
 
@@ -48,7 +71,7 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
       fairyDust.destroy();
     };
   }, []);
-  
+
   const fairyDustCursor = (options?: { colors?: string[], element?: HTMLElement }) => {
     let possibleColors = options?.colors || [
       "#000000",
@@ -64,11 +87,12 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
     const lastPos = { x: width / 2, y: width / 2 };
     const particles: Particle[] = [];
     const canvImages: HTMLCanvasElement[] = [];
+    let particlePool: ParticlePool;
     let canvas: HTMLCanvasElement;
     let context: CanvasRenderingContext2D | null;
     let animationFrame: number;
 
-    const chars = ["✧", "✦", "✯", "✶", "✩", "✻", ];
+    const chars = ["✧", "✦", "✯", "✶", "✩", "✻",];
 
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -83,6 +107,7 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
     };
 
     function init() {
+      particlePool = new ParticlePool(1000, canvas);  // Changed canvasItem to canvas
       if (prefersReducedMotion.matches) {
         console.log(
           "This browser has prefers reduced motion turned on, so the cursor did not init"
@@ -120,34 +145,34 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
       possibleColors.forEach((color) => {
         const randomChar = chars[Math.floor(Math.random() * chars.length)]; // Select a random char from the array
         let measurements = context!.measureText(randomChar); // Use randomChar instead of char
-      
+
         let bgCanvas = document.createElement("canvas");
         let bgContext = bgCanvas.getContext("2d");
-      
+
         if (!bgContext) {
           console.error("Failed to get 2D context for bgCanvas");
           return;
         }
-      
+
         bgCanvas.width = measurements.width;
         bgCanvas.height =
           measurements.actualBoundingBoxAscent +
           measurements.actualBoundingBoxDescent;
-      
+
         bgContext.fillStyle = color; // Here we set the color for the fill
         bgContext.textAlign = "center";
         bgContext.font = "21px serif";
         bgContext.textBaseline = "middle";
-      
+
         bgContext.fillText(
           randomChar,
           bgCanvas.width / 2,
           measurements.actualBoundingBoxAscent
         );
-      
+
         canvImages.push(bgCanvas);
       });
-      
+
       bindEvents();
       loop();
     }
@@ -214,8 +239,7 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
     }
 
     function addParticle(x: number, y: number, color: HTMLCanvasElement) {
-      particles.push(new Particle(x, y, color));
-      // console.log("color? ", color)
+      particles.push(particlePool.getParticle(x, y, color));
     }
 
     function updateParticles() {
