@@ -19,7 +19,7 @@ const SnowFall = () => {
         const newFlowers = [];
         for (let i = 0; i < flowerCount; i++) {
             const x = Math.random() * window.innerWidth;
-            const y = Math.random() * -window.innerHeight; 
+            const y = Math.random() * window.innerHeight + 1.5 * window.innerHeight; // Start higher offscreen
             const id = `${x}_${y}`; // Create unique id from x and y values
             newFlowers.push({ x, y, speed: (Math.random() + 1)  * 2, id, start: false });
         }
@@ -41,7 +41,8 @@ const SnowFall = () => {
                     style={{
                         position: 'absolute',
                         left: `${flower.x}px`,
-                        transform: flower.start ? `translateY(${window.innerHeight - flower.y}px)` : 'translateY(0)',
+                        top: flower.start ? `0px` : `-${flower.y}px`,
+                        transform: flower.start ? `translateY(${window.innerHeight}px)` : 'none',
                         transition: flower.start ? `transform ${flower.speed}s linear` : 'none',
                     }}
                 >
