@@ -23,8 +23,6 @@ export function App() {
         <Vintage path="K/vintage" />
         <Palette path="K/palette" />
       </Router> 
-      {/* <Mush /> */}
-      {/* <KitchyFlower /> */}
     </>
   )
 }
