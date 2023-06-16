@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useMemo } from 'preact/hooks';
 import KitchyFlower from '../../assets/KitchyFlower';
 import './snowStyles.css'
 
@@ -7,45 +7,31 @@ type Flower = {
     x: number;
     y: number;
     speed: number;
-    start: boolean;
 };
 
 const SnowFall = () => {
-    const [flowers, setFlowers] = useState<Flower[]>([]);
     const flowerCount = 100;
 
-    useEffect(() => {
+    // This function generates a random number within the range (0 to max).
+    function getRandomPosition(max: number) {
+        return Math.floor(Math.random() * (max + 52) - 51);
+    }
+
+    const flowers = useMemo<Flower[]>(() => {
         const newFlowers = [];
         for (let i = 0; i < flowerCount; i++) {
             const x = getRandomPosition(window.innerWidth);
             const y = getRandomPosition(window.innerHeight) - 100; // Start higher offscreen
             const id = `${x}_${y}`; // Create unique id from x and y values
-            newFlowers.push({ 
-                x, 
-                y, 
+            newFlowers.push({
+                x,
+                y,
                 speed: +(Math.random() + 1).toFixed(2) * 2,
-                id, 
-                start: false 
+                id,
             });
-            console.log(newFlowers)
         }
-        setFlowers(newFlowers);
-
-        const timeoutId = setTimeout(() => {
-            setFlowers(flowers => flowers.map(flower => ({ ...flower, start: true })));
-        }, 1000); // Start the animation after 100ms
-
-        return () => clearTimeout(timeoutId);
+        return newFlowers;
     }, []);
-
-    // This function generates a random number within the range (0 to max).
-    function getRandomPosition(max: number) {
-        return Math.floor(Math.random() * (max +52 ) - 51);
-    }
-
-    const handleTransitionEnd = (flowerId: string) => {
-        setFlowers((flowers) => flowers.filter((flower) => flower.id !== flowerId));
-    };
 
     return (
         <div className="snowfall z-0">
@@ -56,15 +42,20 @@ const SnowFall = () => {
                     style={{
                         position: 'absolute',
                         left: `${flower.x}px`,
-                        top: flower.start ? `0px` : `-${flower.y}px`,
-                        transform: flower.start ? `translateY(${window.innerHeight}px)` : 'none',
-                        transition: flower.start ? `transform ${flower.speed}s linear` : 'none',
+                        top: -40,
+                        animation: `fall ${flower.speed}s linear forwards`,
                     }}
-                    onTransitionEnd={() => handleTransitionEnd(flower.id)}
                 >
                     <KitchyFlower fill="#FFBF7F" />
                 </div>
             ))}
+            <style>{`
+                @keyframes fall {
+                    to {
+                        transform: translateY(${window.innerHeight + 40}px);
+                    }
+                }
+            `}</style>
         </div>
     );
 };
