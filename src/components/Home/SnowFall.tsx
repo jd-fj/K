@@ -1,4 +1,3 @@
-// SnowFall.tsx
 import { useEffect, useState } from 'preact/hooks';
 import KitchyFlower from '../../assets/KitchyFlower';
 import './snowStyles.css'
@@ -21,22 +20,33 @@ const SnowFall = () => {
             const x = getRandomPosition(window.innerWidth);
             const y = getRandomPosition(window.innerHeight) - 100; // Start higher offscreen
             const id = `${x}_${y}`; // Create unique id from x and y values
-            newFlowers.push({ x, y, speed: (Math.random() + 1) * 2, id, start: false });
+            newFlowers.push({ 
+                x, 
+                y, 
+                speed: +(Math.random() + 1).toFixed(2) * 2,
+                id, 
+                start: false 
+            });
+            console.log(newFlowers)
         }
         setFlowers(newFlowers);
-    
+
         const timeoutId = setTimeout(() => {
             setFlowers(flowers => flowers.map(flower => ({ ...flower, start: true })));
-        }, 100); // Start the animation after 100ms
-    
+        }, 1000); // Start the animation after 100ms
+
         return () => clearTimeout(timeoutId);
     }, []);
-    
+
     // This function generates a random number within the range (0 to max).
     function getRandomPosition(max: number) {
         return Math.floor(Math.random() * (max +52 ) - 51);
     }
-    
+
+    const handleTransitionEnd = (flowerId: string) => {
+        setFlowers((flowers) => flowers.filter((flower) => flower.id !== flowerId));
+    };
+
     return (
         <div className="snowfall z-0">
             {flowers.map((flower) => (
@@ -50,6 +60,7 @@ const SnowFall = () => {
                         transform: flower.start ? `translateY(${window.innerHeight}px)` : 'none',
                         transition: flower.start ? `transform ${flower.speed}s linear` : 'none',
                     }}
+                    onTransitionEnd={() => handleTransitionEnd(flower.id)}
                 >
                     <KitchyFlower fill="#FFBF7F" />
                 </div>
