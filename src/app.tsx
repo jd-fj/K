@@ -4,7 +4,7 @@ import './app.css'
 import Router from 'preact-router';
 import YellowFlower from './components/Home/YellowFlower';
 import About from './components/About';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
 import Film from './components/Film';
 import Reiki from './components/Reiki';
 import Vintage from './components/Vintage';
