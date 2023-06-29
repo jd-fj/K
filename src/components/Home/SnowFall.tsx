@@ -33,12 +33,17 @@ const SnowFall = () => {
         return newFlowers;
     }, []);
 
+    const removeFlower = (event: any) => {
+        event.target.remove();
+    };
+
     return (
         <div className="snowfall z-0">
             {flowers.map((flower) => (
                 <div
-                    key={flower.id} 
+                    key={flower.id}
                     class="flower"
+                    onAnimationEnd={removeFlower}  // Adding onAnimationEnd event listener
                     style={{
                         position: 'absolute',
                         left: `${flower.x}px`,
@@ -50,12 +55,12 @@ const SnowFall = () => {
                 </div>
             ))}
             <style>{`
-                @keyframes fall {
-                    to {
-                        transform: translateY(${window.innerHeight + 40}px);
-                    }
-                }
-            `}</style>
+        @keyframes fall {
+          to {
+            transform: translateY(${window.innerHeight + 40}px);
+          }
+        }
+      `}</style>
         </div>
     );
 };
