@@ -5,11 +5,9 @@ const HamburgerIcon: FunctionalComponent = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
       className="h-20 w-20"
-      // strokeWidth='5px'
     >
       <path
         strokeLinecap="round"
