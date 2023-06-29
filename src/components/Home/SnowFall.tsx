@@ -43,7 +43,7 @@ const SnowFall = () => {
                 <div
                     key={flower.id}
                     class="flower"
-                    onAnimationEnd={removeFlower}  // Adding onAnimationEnd event listener
+                    onAnimationEnd={removeFlower}
                     style={{
                         position: 'absolute',
                         left: `${flower.x}px`,
