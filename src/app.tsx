@@ -7,7 +7,7 @@ import About from './components/About';
 import NavBar from './components/NavBar/NavBar';
 import Film from './components/Film';
 import Reiki from './components/Reiki';
-import Vintage from './components/Vintage';
+import Sessions from './components/Sessions';
 import Palette from './components/Palette/Palette';
 // import Mush from './assets/mush'
 
@@ -20,7 +20,7 @@ export function App() {
         <About path="K/about" />
         <Film path="K/film" />
         <Reiki path="K/reiki" />
-        <Vintage path="K/vintage" />
+        <Sessions path="K/sessions" />
         <Palette path="K/palette" />
       </Router> 
     </>
