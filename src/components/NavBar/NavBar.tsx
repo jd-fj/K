@@ -1,9 +1,9 @@
 // NavBar.tsx
-import { FunctionalComponent } from 'preact';
-import { useState } from 'preact/hooks';
-import { Link } from 'preact-router/match';
-import HamburgerIcon from './Hamburger';
-import Ex from './Ex';
+import { FunctionalComponent } from "preact";
+import { useState } from "preact/hooks";
+import { Link } from "preact-router/match";
+import HamburgerIcon from "./Hamburger";
+import Ex from "./Ex";
 
 const NavBar: FunctionalComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,33 +18,37 @@ const NavBar: FunctionalComponent = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-4 z-10 text-2xl">
-        <Link onClick={handleLinkClick} href="/K/" className="rounded-lg ml-5 px-3 py-2 text-orange-300 font-semibold hover:bg-yellow-100 hover:text-amber-400 ">
-          Yellow Flower
+      <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-4 z-10 text-3xl">
+        <Link
+          onClick={handleLinkClick}
+          href="/K/"
+          className="rounded-lg ml-5 px-3 py-2 text-[#d4aa20] font-semibold hover:bg- hover:text-amber-400 text-6xl"
+        >
+yellow flower healing
         </Link>
 
-        <div className="relative mr-5">
-          <button onClick={toggleMenu} className="block rounded-lg px-3 py-2 text-orange-300 font-medium  hover:bg-yellow-100 hover:text-amber-400">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="h-10 w-10"
-            >
-              {isOpen ? <Ex /> : <HamburgerIcon />}
-            </svg>
+        <div className="relative mr-12">
+          <button
+            onClick={toggleMenu}
+            className="block rounded-lg px-3 py-2 text-[#d4aa20] font-medium  hover:bg- hover:text-amber-400"
+          >
+            {isOpen ? <Ex /> : <HamburgerIcon />}
           </button>
           {isOpen && (
-            <div className="absolute top-full right-0 flex flex-col items-end space-y-2">
+            <div className="absolute top-full right-0 flex flex-col items-end space-y-2 mr-5">
               {[
-                ['Reiki', '/K/reiki'],
-                ['Vintage', '/K/vintage'],
-                ['Film', '/K/film'],
-                ['About', '/K/about'],
-                ['Palette', '/K/palette']
+                ["Reiki", "/K/reiki"],
+                ["Vintage", "/K/vintage"],
+                ["Film", "/K/film"],
+                ["About", "/K/about"],
+                ["Palette", "/K/palette"],
               ].map(([title, url]) => (
-                <Link onClick={handleLinkClick} key={title} href={url} className="rounded-lg px-3 py-2 text-orange-300 font-medium hover:bg-yellow-100 hover:text-amber-400">
+                <Link
+                  onClick={handleLinkClick}
+                  key={title}
+                  href={url}
+                  className="rounded-lg px-3 py-2 text-[#d4aa20] font-medium hover:bg-[#85a138] hover:text-amber-400"
+                >
                   {title}
                 </Link>
               ))}

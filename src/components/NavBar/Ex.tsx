@@ -8,7 +8,7 @@ const Ex: FunctionalComponent = () => {
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
-      className="h-10 w-10"
+      className="h-20 w-20"
     >
       <path
         strokeLinecap="round"
