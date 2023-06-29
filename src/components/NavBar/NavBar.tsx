@@ -18,7 +18,7 @@ const NavBar: FunctionalComponent = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-between items-center py-4 z-20 text-3xl relative">
+    <nav className="top-0 left-0 right-0 flex justify-between items-center py-4 z-20 text-3xl relative">
       <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
         <Wavy />
       </div>
@@ -43,6 +43,7 @@ const NavBar: FunctionalComponent = () => {
               ["Reiki", "/K/reiki"],
               ["Sessions", "/K/sessions"],
               ["About", "/K/about"],
+              ["Palette", "/K/palette"],
             ].map(([title, url]) => (
               <Link
                 onClick={handleLinkClick}
