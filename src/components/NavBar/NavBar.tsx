@@ -25,7 +25,7 @@ const NavBar: FunctionalComponent = () => {
       <Link
         onClick={handleLinkClick}
         href="/K/"
-        className="rounded-lg ml-5 px-3 py-2 text-[#d4aa20] font-semibold hover:bg- hover:text- text-xl md:text-4xl lg:text-6xl z-20"
+        className="rounded-lg ml-5 px-3 py-2 text-[#d4aa20] font-semibold hover:bg- hover:text- text-2xl md:text-4xl lg:text-6xl z-20"
       >
         yellow flower healing
       </Link>
