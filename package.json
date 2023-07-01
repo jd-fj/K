@@ -11,6 +11,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "open-simplex-noise": "^2.5.0",
     "preact": "^10.15.1",
     "preact-router": "^4.1.1"
   },
