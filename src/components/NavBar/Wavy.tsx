@@ -38,7 +38,9 @@ const Wavy: FunctionalComponent = () => {
       className="z-0"
     >
       {/* there doesn't even need to be any path points here, because the noise will draw it */}
-      <path d="M0,200 C83,265 3,170 166,200 C290,250 249,150 332,200 C415,250 415,160 550,200 L500,0 L0,0 Z"/>
+      <path />
+      
+      {/* <path d="M0,200 C83,265 3,170 166,200 C290,250 249,150 332,200 C415,250 415,160 550,200 L500,0 L0,0 Z"/> */}
     </svg>
   );
 };
