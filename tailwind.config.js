@@ -35,7 +35,9 @@ export default {
       white: colors.white,
       brown: {
         100: "#974",
-        200: "#2b2521"
+        200: "#2b2521",
+        300: '#8d6b3b',
+        400: '#725216'
       }
     },
     screens: {
