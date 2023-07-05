@@ -3,12 +3,10 @@ import { FunctionComponent } from 'preact';
 
 const About: FunctionComponent = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center">
     {/* <div className="border-8 border-red-300 flex items-center justify-center h-screen"> */}
-      <div className="">
         <h1 className="text-white-50">About</h1>
         <p>This is the About page</p>
-      </div>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { FunctionComponent } from 'preact';
 
 const Sessions: FunctionComponent = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center">
       <h1>Sessions</h1>
       <p>This is the Sessions page</p>
     </div>

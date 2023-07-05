@@ -1,16 +1,15 @@
-/* snowStyles.css */
 .snowfall {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    /* border: red 3px solid; */
-  }
-  
-  .flower {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    /* Add a transition to the transform property */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
 
+.flower {
+  position: absolute;
+  width: 50px;
+  height: 50px;
 }

@@ -1,4 +1,11 @@
+/* app.css */
 body {
   background-color: #fffbeb;
   background-color: #f8ffe7; 
+}
+
+/* app.css */
+.height-calc {
+  height: 10px;
+  border: solid red 2px;
 }

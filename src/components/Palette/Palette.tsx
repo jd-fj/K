@@ -21,7 +21,7 @@ const Palette: FunctionComponent = () => {
   }
 
   return (
-    <div className="grid grid-cols-8 items-end h-screen">
+    <div className="grid grid-cols-8 items-start bottom-0 absolute ">
       {colors.map((color, index) => (
         <div key={index} className="xs:px-3 px-0">
           <input

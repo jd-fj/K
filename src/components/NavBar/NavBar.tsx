@@ -38,7 +38,7 @@ const NavBar: FunctionalComponent = () => {
           {isOpen ? <Ex /> : <HamburgerIcon />}
         </button>
         {isOpen && (
-          <div className="absolute top-full right-0 flex flex-col items-end space-y-2 mr-5 mt-5 text-lg md:text-4xl lg:text-6xl">
+          <div className="absolute top-full right-0 flex flex-col items-end space-y-2 mr-5 mt-5 text-lg md:text-4xl lg:text-5xl">
             {[
               ["Reiki", "/K/reiki"],
               ["Sessions", "/K/sessions"],
