@@ -4,10 +4,10 @@ import about from "../../assets/about.jpg";
 
 const About: FunctionComponent = () => {
   return (
-    <div id="parentDiv" className="flex flex-col lg:flex-row mt-20 mx-10">
+    <div id="parentDiv" className="flex flex-col lg:flex-row mt-20">
       <div 
         id="aboutText"
-        className="flex-1 text-2xl mx-20"
+        className="flex-1 text-lg mx-5 sm:mx-20"
       >
          <p className="mb-5">
           Where does my journey begin? I feel we are all always on one, ever
@@ -49,10 +49,10 @@ const About: FunctionComponent = () => {
           hope to connect {`<3`}
         </p>
 
-        <p className="mb-5">Na </p>
+        <p className="sm:mb-5">Na </p>
       </div>
 
-      <div id="aboutImage" className="flex-1 mx-20">
+      <div id="aboutImage" className="flex-1 mx-5 sm:mx-20">
         <img
           src={about}
           alt="standing and looking cute"
