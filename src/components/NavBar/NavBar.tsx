@@ -49,7 +49,7 @@ const NavBar: FunctionalComponent = () => {
                 onClick={handleLinkClick}
                 key={title}
                 href={url}
-                className="rounded-lg px-3 py-2 text-[#d4aa20] font-medium hover:bg-[#85a138] hover:text-[#fff1d7]"
+                className="rounded-lg px-3 py-2 text-[#d4aa20] font-medium hover:bg-[#85a138] hover:text-amber-300"
               >
                 {title}
               </Link>
