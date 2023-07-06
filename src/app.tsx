@@ -14,17 +14,19 @@ import Palette from "./components/Palette/Palette";
 export function App() {
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col">
         <NavBar />
-        <div className="flex flex-grow ">
-          <Router>
-            <YellowFlower default path="/" />
-            <About path="K/about" />
-            <Film path="K/film" />
-            <Reiki path="K/reiki" />
-            <Sessions path="K/sessions" />
-            <Palette path="K/palette" />
-          </Router>
+        <div className="flex flex-grow justify-center">
+          <div className="flex flex-col items-center justify-center w-full">
+            <Router>
+              <YellowFlower default path="/" />
+              <About path="K/about" />
+              <Film path="K/film" />
+              <Reiki path="K/reiki" />
+              <Sessions path="K/sessions" />
+              <Palette path="K/palette" />
+            </Router>
+          </div>
         </div>
       </div>
     </>

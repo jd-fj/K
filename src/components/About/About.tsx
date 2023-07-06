@@ -4,12 +4,12 @@ import about from "../../assets/about.jpg";
 
 const About: FunctionComponent = () => {
   return (
-    <div id="parentDiv" className="flex flex-col sm:flex-row items-start justify-center my-10 sm:my-20">
-      <div
+    <div id="parentDiv" className="flex flex-col lg:flex-row mt-20 mx-10">
+      <div 
         id="aboutText"
-        className="flex-1 text-xs sm:text-sm md:text-md lg:text-lg mx-10"
+        className="flex-1 text-2xl mx-20"
       >
-        <p className="mb-5">
+         <p className="mb-5">
           Where does my journey begin? I feel we are all always on one, ever
           since we come out of that womb and even before. Reflecting back, I
           think my child Self found freedom and connection in dancing growing
@@ -17,6 +17,7 @@ const About: FunctionComponent = () => {
           surgery and that haulted my ability to practice what I knew and what I
           loved.
         </p>
+
         <p className="mb-5">
           8 years ago I opened my path to yoga and the curiousity of
           spirituality and alternative healing. I joined a Yoga Teacher Training
@@ -24,6 +25,7 @@ const About: FunctionComponent = () => {
           for a Summer and learned more than I ever knew about breathwork,
           meditation, and the body.
         </p>
+
         <p className="mb-5">
           Since then, I have gone back to my past to heal through some trauma I
           didn't even know existed and utilized the tools I had learned to
@@ -33,29 +35,33 @@ const About: FunctionComponent = () => {
           from the appointments and became curious to learn more about what this
           life energy of love is capable of.
         </p>
+
         <p className="mb-5">
           I am now a certified Reiki I Practioner and am excited to share the
           healing energy of love to all who would like to try it. I am currently
           holding appointments out of my place in Renton so please reach out if
           this is of interest to you or if you want to learn more.
         </p>
+
         <p className="mb-5">
           Everyone is capable of healing. You are already on your journey, you
           are beautiful, and you are loved. Thank you for visiting and I truly
           hope to connect {`<3`}
         </p>
-        <p className="mb-5">Namaste Kalee</p>
+
+        <p className="mb-5">Na </p>
       </div>
 
-      <div id="aboutImage" className="flex-1 mx-10">
+      <div id="aboutImage" className="flex-1 mx-20">
         <img
           src={about}
           alt="standing and looking cute"
-          className=""
+          className="w-full object-cover"
         />
       </div>
     </div>
   );
 };
+
 
 export default About;
