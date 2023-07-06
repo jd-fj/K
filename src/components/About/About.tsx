@@ -52,7 +52,7 @@ const About: FunctionComponent = () => {
         <p className="sm:mb-5">Na </p>
       </div>
 
-      <div id="aboutImage" className="flex-1 mx-5 sm:mx-20">
+      <div id="aboutImage" className="flex-1 mx-5 sm:mx-20 sm:mb-0 mb-5">
         <img
           src={about}
           alt="standing and looking cute"
