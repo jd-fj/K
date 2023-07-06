@@ -4,10 +4,10 @@ import about from "../../assets/about.jpg";
 
 const About: FunctionComponent = () => {
   return (
-    <div id="parentDiv" className="flex flex-row items-start justify-center mt-20">
+    <div id="parentDiv" className="flex flex-col sm:flex-row items-start justify-center mt-20 mx-10">
       <div
         id="aboutText"
-        className="flex-1 mx-20 text-xs sm:text-sm md:text-md lg:text-lg"
+        className="flex-1 text-xs sm:text-sm md:text-md lg:text-lg mx-10"
       >
         <p className="mb-5">
           Where does my journey begin? I feel we are all always on one, ever
@@ -44,10 +44,10 @@ const About: FunctionComponent = () => {
           are beautiful, and you are loved. Thank you for visiting and I truly
           hope to connect {`<3`}
         </p>
-        <p className="">Namaste Kalee</p>
+        <p className="mb-5">Namaste Kalee</p>
       </div>
 
-      <div id="aboutImage" className="flex-1 mr-20 ">
+      <div id="aboutImage" className="flex-1 mx-10">
         <img
           src={about}
           alt="standing and looking cute"
