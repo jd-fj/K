@@ -1,5 +1,10 @@
 /* app.css */
 body {
-  background-color: #fffbeb;
-  background-color: #f8ffe7; 
+  /* background-color: #fffbeb; */
+  /* background-color: #f8ffe7;  */
+  background-color: #fdfff4; 
+}
+
+hi {
+  color: #fff1d7;
 }
