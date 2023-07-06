@@ -38,7 +38,7 @@ const NavBar: FunctionalComponent = () => {
           {isOpen ? <Ex /> : <HamburgerIcon />}
         </button>
         {isOpen && (
-          <div className="absolute top-full right-0 flex flex-col items-end space-y-2 mr-5 mt-5 text-lg md:text-4xl lg:text-5xl">
+          <div className="absolute top-full right-0 flex flex-col items-end space-y-2 mr-5 mt-5 text-lg md:text-3xl lg:text-4xl">
             {[
               ["Reiki", "/K/reiki"],
               ["Sessions", "/K/sessions"],
@@ -49,7 +49,7 @@ const NavBar: FunctionalComponent = () => {
                 onClick={handleLinkClick}
                 key={title}
                 href={url}
-                className="rounded-lg px-3 py-2 text-[#d4aa20] font-medium hover:bg-[#85a138] hover:text-amber-400"
+                className="rounded-lg px-3 py-2 text-[#d4aa20] font-medium hover:bg-[#85a138] hover:text-[#fff1d7]"
               >
                 {title}
               </Link>
