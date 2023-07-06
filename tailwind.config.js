@@ -48,7 +48,14 @@ export default {
       xl: "1280px",
       "2xl": "1536px",
     },
-    extend: {},
+    extend: {
+      height: {
+        '100': '25rem',
+        '120': '30rem',
+        '140': '35rem',
+        '160': '40rem',
+      }
+    },
   },
   plugins: [],
 };

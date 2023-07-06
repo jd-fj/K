@@ -3,7 +3,7 @@ import "./app.css";
 
 import Router from "preact-router";
 import YellowFlower from "./components/Home/YellowFlower";
-import About from "./components/About";
+import About from "./components/About/About";
 import NavBar from "./components/NavBar/NavBar";
 import Film from "./components/Film";
 import Reiki from "./components/Reiki";
@@ -16,7 +16,7 @@ export function App() {
     <>
       <div className="flex flex-col min-h-screen">
         <NavBar />
-        <div className="flex flex-grow items-center justify-center">
+        <div className="flex flex-grow ">
           <Router>
             <YellowFlower default path="/" />
             <About path="K/about" />
