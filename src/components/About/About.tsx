@@ -4,12 +4,12 @@ import about from "../../assets/about.jpg";
 
 const About: FunctionComponent = () => {
   return (
-    <div id="parentDiv" className="flex flex-col lg:flex-row mt-20">
+    <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20">
       <div 
         id="aboutText"
         className="flex-1 text-lg mx-5 sm:mx-20"
       >
-         <p className="mb-5">
+        <p className="mb-5">
           Where does my journey begin? I feel we are all always on one, ever
           since we come out of that womb and even before. Reflecting back, I
           think my child Self found freedom and connection in dancing growing
@@ -52,7 +52,7 @@ const About: FunctionComponent = () => {
         <p className="sm:mb-5">Na </p>
       </div>
 
-      <div id="aboutImage" className="flex-1 mx-5 sm:mx-20 sm:mb-0 mb-5">
+      <div id="aboutImage" className="flex-1 mx-5 sm:mx-20 mb-5">
         <img
           src={about}
           alt="standing and looking cute"
@@ -62,6 +62,5 @@ const About: FunctionComponent = () => {
     </div>
   );
 };
-
 
 export default About;
