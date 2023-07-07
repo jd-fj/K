@@ -19,7 +19,7 @@ const NavBar: FunctionalComponent = () => {
 
   return (
     <nav className="top-0 left-0 right-0 flex justify-between items-center py-4 z-20 text-3xl relative">
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
+      <div id="wavyDiv" className="border-8 border-red-600 absolute top-0 left-0 right-0 bottom-0 z-0">
         <Wavy />
       </div>
       <Link
