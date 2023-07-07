@@ -3,7 +3,7 @@ import { FunctionComponent } from "preact";
 
 const Sessions: FunctionComponent = () => {
   return (
-    <div className="flex flex-col items-start justify-center text-lg mx-5 sm:mx-0 mt-10">
+    <div className="flex flex-col items-center justify-center text-lg mx-5 sm:mx-0 mt-10">
       <p className="lg:my-5 my-3">Sessions are 60 minutes long with at least 40 minutes of table time with hands on healing.</p>
       <p className="lg:my-5 my-3">Comfortable clothing suggested, you will not need to undress.</p>
       <p className="lg:my-5 my-3">We can play music or work in silence, up to you {":)"}</p>
