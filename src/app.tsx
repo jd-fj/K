@@ -1,10 +1,10 @@
 // app.tsx
 import "./app.css";
 
+import NavBar from "./components/NavBar/JavBar";
 import Router from "preact-router";
 import YellowFlower from "./components/Home/YellowFlower";
 import About from "./components/About/About";
-import NavBar from "./components/NavBar/NavBar";
 import Film from "./components/Film";
 import Reiki from "./components/Reiki";
 import Sessions from "./components/Sessions";
@@ -14,10 +14,7 @@ import Palette from "./components/Palette/Palette";
 export function App() {
   return (
     <>
-      <div className="">
         <NavBar />
-        <div className="">
-          <div className="">
             <Router>
               <YellowFlower default path="/" />
               <About path="K/about" />
@@ -26,9 +23,6 @@ export function App() {
               <Sessions path="K/sessions" />
               <Palette path="K/palette" />
             </Router>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

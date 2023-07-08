@@ -21,25 +21,21 @@ const NavBar: FunctionalComponent = () => {
       <div id="wavyDiv" className="h-20">
         <Wavy />
       </div>
-      <div className="absolute bottom-0 flex justify-between w-full px-4 md:px-0">
-        <Link
-          onClick={handleLinkClick}
-          href="/K/"
-          className=""
-        >
+      <div className="absolute bottom-0 flex justify-between items-end w-full px-4 md:px-0">
+        <Link onClick={handleLinkClick} href="/K/" className="">
           yellow flower healing
         </Link>
 
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="">
+          <button onClick={toggleMenu} className="mt-0">
             {isOpen ? <Ex /> : <HamburgerIcon />}
           </button>
         </div>
       </div>
 
-      <div 
+      <div
         className={`${
-          isOpen ? 'block' : 'hidden'
+          isOpen ? "flex flex-col items-end" : "hidden"
         } md:flex md:items-center md:justify-between`}
       >
         {[
@@ -48,12 +44,7 @@ const NavBar: FunctionalComponent = () => {
           ["About", "/K/about"],
           ["Palette", "/K/palette"],
         ].map(([title, url]) => (
-          <Link
-            onClick={handleLinkClick}
-            key={title}
-            href={url}
-            className=""
-          >
+          <Link onClick={handleLinkClick} key={title} href={url} className="">
             {title}
           </Link>
         ))}
