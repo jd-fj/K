@@ -92,7 +92,7 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
     let context: CanvasRenderingContext2D | null;
     let animationFrame: number;
 
-    const chars = ["✧", "✦", "✯", "✶", "✩", "✻",];
+    const chars = ["✦"]
 
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
@@ -225,7 +225,7 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
           cursor.y - lastPos.y
         );
 
-        if (distBetweenPoints > 1.5) {
+        if (distBetweenPoints > 0) {
           addParticle(
             cursor.x,
             cursor.y,

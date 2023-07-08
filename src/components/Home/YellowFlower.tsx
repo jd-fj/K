@@ -7,6 +7,7 @@ const YellowFlower: FunctionalComponent = () => {
   useFairyDustCursor({
      colors: [
     '#d4aa20', 
+    '#e2b933'
   ]});
   return (
     <div className="">
