@@ -14,10 +14,10 @@ import Palette from "./components/Palette/Palette";
 export function App() {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="">
         <NavBar />
-        <div className="flex flex-grow justify-center">
-          <div className="flex flex-col items-center justify-center w-full">
+        <div className="">
+          <div className="">
             <Router>
               <YellowFlower default path="/" />
               <About path="K/about" />

@@ -1,4 +1,3 @@
-// NavBar.tsx
 import { FunctionalComponent } from "preact";
 import { useState } from "preact/hooks";
 import { Link } from "preact-router/match";
@@ -18,44 +17,46 @@ const NavBar: FunctionalComponent = () => {
   };
 
   return (
-    <nav className="top-0 left-0 right-0 flex justify-between items-center py-4 z-20 text-3xl relative">
-      <div id="wavyDiv" className="border-8 border-red-600 absolute top-0 left-0 right-0 bottom-0 z-0">
+    <nav className="relative h-20">
+      <div id="wavyDiv" className="h-20">
         <Wavy />
       </div>
-      <Link
-        onClick={handleLinkClick}
-        href="/K/"
-        className="rounded-lg ml-5 px-3 py-2 text-[#d4aa20] font-semibold hover:bg- hover:text- text-2xl md:text-4xl lg:text-6xl z-20"
-      >
-        yellow flower healing
-      </Link>
-
-      <div className="relative mr-3 md:mr-6 lg:mr-12 z-20">
-        <button
-          onClick={toggleMenu}
-          className="block rounded-lg px-3 py-2 text-[#d4aa20] font-medium hover:bg- hover:text-amber-400"
+      <div className="absolute bottom-0 flex justify-between w-full px-4 md:px-0">
+        <Link
+          onClick={handleLinkClick}
+          href="/K/"
+          className=""
         >
-          {isOpen ? <Ex /> : <HamburgerIcon />}
-        </button>
-        {isOpen && (
-          <div className="absolute top-full right-0 flex flex-col items-end space-y-2 mr-5 mt-5 text-lg md:text-3xl lg:text-4xl">
-            {[
-              ["Reiki", "/K/reiki"],
-              ["Sessions", "/K/sessions"],
-              ["About", "/K/about"],
-              ["Palette", "/K/palette"],
-            ].map(([title, url]) => (
-              <Link
-                onClick={handleLinkClick}
-                key={title}
-                href={url}
-                className="rounded-lg px-3 py-2 text-[#d4aa20] font-medium hover:bg-[#85a138] hover:text-amber-300 active:bg-[#85a138] active:text-amber-300 bg-[#fffaca] opacity-95 hover:opacity-100"
-              >
-                {title}
-              </Link>
-            ))}
-          </div>
-        )}
+          yellow flower healing
+        </Link>
+
+        <div className="md:hidden">
+          <button onClick={toggleMenu} className="">
+            {isOpen ? <Ex /> : <HamburgerIcon />}
+          </button>
+        </div>
+      </div>
+
+      <div 
+        className={`${
+          isOpen ? 'block' : 'hidden'
+        } md:flex md:items-center md:justify-between`}
+      >
+        {[
+          ["Reiki", "/K/reiki"],
+          ["Sessions", "/K/sessions"],
+          ["About", "/K/about"],
+          ["Palette", "/K/palette"],
+        ].map(([title, url]) => (
+          <Link
+            onClick={handleLinkClick}
+            key={title}
+            href={url}
+            className=""
+          >
+            {title}
+          </Link>
+        ))}
       </div>
     </nav>
   );
