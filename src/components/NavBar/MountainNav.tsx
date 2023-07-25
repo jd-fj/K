@@ -420,7 +420,6 @@ const MountainNav: FunctionalComponent = () => {
               style="fill: url(#New_Pattern_Swatch_6-12);"
             />
           </g>
-          <rect x=".02" width="1008" height="140.9" style="fill: none;" />
         </g>
       </g>
     </svg>

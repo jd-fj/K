@@ -4,61 +4,50 @@ import about from "../../assets/about.jpg";
 
 const About: FunctionComponent = () => {
   return (
-    <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20">
-      <div 
-        id="aboutText"
-        className="flex-1 text-lg mx-5 sm:mx-20"
-      >
+    <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 ">
+      <div id="aboutText" className="flex-1 text-xl mx-5 sm:mx-20 text-center">
+        <p className="mb-5">A little about me ~</p>
+
         <p className="mb-5">
-          Where does my journey begin? I feel we are all always on one, ever
-          since we come out of that womb and even before. Reflecting back, I
-          think my child Self found freedom and connection in dancing growing
-          up. As soon as adulthood hit, I unfortunately had to get Spinal Fusion
-          surgery and that haulted my ability to practice what I knew and what I
-          loved.
+          8 years ago I opened my path to yoga and eventually joined a Yoga
+          Teacher Training that heavily focused on breathwork and meditation. My
+          teachers welcomed me with open hearts and for that and all the wisdom
+          they shared, I am forever grateful.
         </p>
 
         <p className="mb-5">
-          8 years ago I opened my path to yoga and the curiousity of
-          spirituality and alternative healing. I joined a Yoga Teacher Training
-          with the most amazing and authentic teachers, followed them to Bali
-          for a Summer and learned more than I ever knew about breathwork,
-          meditation, and the body.
+          My interest in spirituality and alternative healing continued to grow
+          and lead me to be curious about the healing power of love and energy.
+          As a Reiki recipient and Practinioner, I am truly *blissed* to be able
+          to share this experience with you all.
         </p>
+
+        <p className="mb-5">My other knowledge/interests:</p>
+
+        <p className="mb-5">Chakra System</p>
+        <p className="mb-5">Buddhism</p>
+        <p className="mb-5">Hatha Yoga</p>
+        <p className="mb-5">Internal Family System</p>
+        <p className="mb-5">Nonviolent Communication</p>
+        <p className="mb-5">Crystal Connection</p>
 
         <p className="mb-5">
-          Since then, I have gone back to my past to heal through some trauma I
-          didn't even know existed and utilized the tools I had learned to
-          explore more of natural healing which led me to Reiki. As a recipient
-          of Reiki, I started to feel an absence of stress and a lift in my day
-          to day anxieties. I love talking through what my Practitioner recieved
-          from the appointments and became curious to learn more about what this
-          life energy of love is capable of.
+          Thank you for visiting {`<3`} If it feels right for you, please reach
+          out.
         </p>
 
-        <p className="mb-5">
-          I am now a certified Reiki I Practioner and am excited to share the
-          healing energy of love to all who would like to try it. I am currently
-          holding appointments out of my place in Renton so please reach out if
-          this is of interest to you or if you want to learn more.
-        </p>
-
-        <p className="mb-5">
-          Everyone is capable of healing. You are already on your journey, you
-          are beautiful, and you are loved. Thank you for visiting and I truly
-          hope to connect {`<3`}
-        </p>
-
-        <p className="sm:mb-5">Na </p>
+        <p className="">Nameste</p>
+        <p className="sm:mb-5">Kalee</p>
       </div>
 
-      <div id="aboutImage" className="flex-1 mx-5 sm:mx-20 mb-5">
-        <img
-          src={about}
-          alt="standing and looking cute"
-          className="w-full object-cover"
-        />
-      </div>
+      <div id="aboutImage" className="flex justify-center  items-start flex-1 mx-5 sm:mx-20 mb-5">
+  <img
+    src={about}
+    alt="standing and looking cute"
+    className="w-3/4 object-contain"
+  />
+</div>
+
     </div>
   );
 };
