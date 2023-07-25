@@ -24,11 +24,11 @@ const About: FunctionComponent = () => {
 
         <p className="mb-5">My other knowledge/interests:</p>
 
-        <p className="mb-5">Chakra System</p>
-        <p className="mb-5">Buddhism</p>
-        <p className="mb-5">Hatha Yoga</p>
-        <p className="mb-5">Internal Family System</p>
-        <p className="mb-5">Nonviolent Communication</p>
+        <p className="mb-2">Chakra System</p>
+        <p className="mb-2">Buddhism</p>
+        <p className="mb-2">Hatha Yoga</p>
+        <p className="mb-2">Internal Family System</p>
+        <p className="mb-2">Nonviolent Communication</p>
         <p className="mb-5">Crystal Connection</p>
 
         <p className="mb-5">
