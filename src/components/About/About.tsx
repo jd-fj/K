@@ -5,7 +5,7 @@ import about from "../../assets/about.jpg";
 const About: FunctionComponent = () => {
   return (
     <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 ">
-      <div id="aboutText" className="flex-1 text-xl mx-5 sm:mx-20 text-center">
+      <div id="aboutText" className="flex-1 text-lg mx-5 sm:mx-10 text-center">
         <p className="mb-5">A little about me ~</p>
 
         <p className="mb-5">
