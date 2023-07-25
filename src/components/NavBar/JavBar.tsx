@@ -28,7 +28,7 @@ const JavBar: FunctionalComponent = () => {
         href="/K/"
         className="absolute left-0 bottom-0 mb-2 ml-2"
       >
-        JavBar Component
+        Yellow Flower Healing
       </Link>
 
       <div

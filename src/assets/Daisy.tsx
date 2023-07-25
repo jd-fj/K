@@ -1,11 +1,12 @@
 // Daisy.tsx
 import { FunctionComponent } from "preact";
 
-const Daisy = () => (
+
+const Daisy: FunctionComponent = () => (
   <svg
     id="Layer_2"
     data-name="Layer 2"
-    // viewBox="0 0 40 40"
+    viewBox="0 0 40 40"
     // width="2.25em"
     // height="2.25em"
     opacity="0.5"

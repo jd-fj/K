@@ -51,7 +51,7 @@ const SnowFall = () => {
             animation: `fall ${flower.speed}s linear forwards`,
           }}
         >
-          <Daisy fill="#FFBF7F" />
+          <Daisy />
         </div>
       ))}
       <style>{`
