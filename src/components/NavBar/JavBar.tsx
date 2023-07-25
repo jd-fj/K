@@ -1,6 +1,6 @@
 import { FunctionalComponent } from "preact";
 import { useState } from "preact/hooks";
-import Wavy from "./Wavy";
+import MountainNav from "./MountainNav";
 import { Link } from "preact-router/match";
 import HamburgerIcon from "./Hamburger";
 import Ex from "./Ex";
@@ -21,7 +21,7 @@ const JavBar: FunctionalComponent = () => {
 
   return (
     <nav className="relative">
-      <Wavy />
+      <MountainNav />
 
       <Link
         id="homeLink"

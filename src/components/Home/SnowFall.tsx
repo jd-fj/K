@@ -1,5 +1,5 @@
 import { useMemo } from "preact/hooks";
-import KitchyFlower from "../../assets/KitchyFlower";
+import Daisy from "../../assets/Daisy";
 import "./snowStyles.css";
 
 type Flower = {
@@ -51,7 +51,7 @@ const SnowFall = () => {
             animation: `fall ${flower.speed}s linear forwards`,
           }}
         >
-          <KitchyFlower fill="#FFBF7F" />
+          <Daisy fill="#FFBF7F" />
         </div>
       ))}
       <style>{`
