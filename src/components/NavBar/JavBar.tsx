@@ -26,10 +26,10 @@ const JavBar: FunctionalComponent = () => {
       <Link
         id="homeLink"
         href="/K/"
-        style={{ paddingLeft: '2vw', paddingTop: '2vh' }}
-        className="absolute top-0 left-20 pt-2"
+        // style={{ paddingLeft: '2vw', paddingTop: '2vh' }}
+        className="absolute top-0 left-[7%] pt-2"
       >
-        {/* Yellow Flower Healing */}
+        Yellow Flower Healing
       </Link>
 
       <div
