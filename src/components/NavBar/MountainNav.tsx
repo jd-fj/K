@@ -7,7 +7,7 @@ const MountainNav: FunctionalComponent = () => {
       id="Layer_2"
       data-name="Layer 2"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 10 1008.05 144"
+      viewBox="0 0 1008 144"
     >
       <defs>
         <pattern
@@ -372,8 +372,8 @@ const MountainNav: FunctionalComponent = () => {
               style="fill: url(#New_Pattern_Swatch_6-11);"
             />
           </g>
-          <g>
-            <g>
+          {/* <g>
+            <g id="homeFlower">
               <path
                 d="m38.04,47.07c-.71-.25-1.25-.45-2.02-.72,1.17-4.9,2.09-9.85,3.62-14.64.71-2.25,2.41-4.32,4.03-6.22.62-.73,2.5-1.25,3.42-.94.91.3,1.85,1.75,1.89,2.73.18,4.52-1.63,8.62-4.35,12.31-1.92,2.6-4.31,4.92-6.59,7.48Z"
                 style="fill: url(#New_Pattern_Swatch_5);"
@@ -419,7 +419,7 @@ const MountainNav: FunctionalComponent = () => {
               d="m35.48,45.35c2-.2,4.11.75,4.86,2.21.11.22.18.51.1.73-.29.84-.56,1.69-.99,2.48-.7,1.28-2.03,1.73-3.63,1.68-1.3-.04-2.26-.66-3.06-1.48-.25-.26-.49-.54-.74-.8-.4-.43-.58-.89-.36-1.44.24-.6.45-1.2.72-1.78.49-1.03,1.56-1.35,2.7-1.55.13-.02.26-.03.4-.04Z"
               style="fill: url(#New_Pattern_Swatch_6-12);"
             />
-          </g>
+          </g> */}
         </g>
       </g>
     </svg>

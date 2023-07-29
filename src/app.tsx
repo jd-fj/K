@@ -1,7 +1,7 @@
 // app.tsx
 import "./app.css";
 
-import NavBar from "./components/NavBar/JavBar";
+import NavBar from "./components/NavBar/DadBar";
 import Router from "preact-router";
 import YellowFlower from "./components/Home/YellowFlower";
 import About from "./components/About/About";
