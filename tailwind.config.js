@@ -64,6 +64,7 @@ export default {
         '8v': '8vmin',
         '9v': '9vmin',
         '10v': '10vmin',
+        '15v': '15vmin'
       },
       width: {
         '1v': '1vmin',
@@ -76,6 +77,7 @@ export default {
         '8v': '8vmin',
         '9v': '9vmin',
         '10v': '10vmin',
+        '15v': '15vmin'
       },
     },
   },

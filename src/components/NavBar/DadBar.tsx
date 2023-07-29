@@ -13,24 +13,24 @@ const navLinks = [
 
 const JavBar: FunctionalComponent = () => {
   return (
-    <nav className="relative">
+    <nav className="relative mb-10">
 
         <div className="">
           <MountainNav />
         </div>
 
         <div className="absolute top-0 left-0 flex items-center">
-          <div className="flex items-center w-10v h-10v">
+          <div className="flex items-center w-15v h-15v">
             <HomeFlower />
           </div>
-          <Link id="homeLink" className="ml-2" href="/K/">
+          <Link id="homeLink" className="" href="/K/">
             Yellow Flower Healing
           </Link>
         </div>
 
-        <div className="absolute right-0 bottom-0 flex">
+        <div className="absolute right-0 bottom-0 top-[100%] flex">
           {navLinks.map(([title, url]) => (
-            <Link key={title} className="ml-2" href={url}>
+            <Link key={title} className="" href={url}>
               {title}
             </Link>
           ))}

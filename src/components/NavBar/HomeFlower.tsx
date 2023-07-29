@@ -4,12 +4,12 @@ import { FunctionComponent } from "preact";
 
 const HomeFlower: FunctionComponent = () => (
   <svg
-  className="object-scale-down h-full w-full"
+  className="object-scale-down h-full w-full m-3"
   // className="object-contain h-full w-full"
     // className="absolute top-0 left-0 w-10v h-10v"
     id="Layer_2"
     data-name="Layer 2"
-    viewBox="0 0 40 40"
+    viewBox="0 0 41 41"
     preserveAspectRatio="xMidYMid meet"
   >
     <g id="Layer_1-2" data-name="Layer 1">
