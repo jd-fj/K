@@ -9,7 +9,7 @@ const Daisy: FunctionComponent = () => (
     viewBox="0 0 40 40"
     // width="2.25em"
     // height="2.25em"
-    opacity="0.5"
+    // opacity="0.5"
   >
     <defs>
       <pattern

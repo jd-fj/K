@@ -1,5 +1,46 @@
 /* app.css */
 body {
-  overflow: hidden;
-  background-color: #f3fcd9;
+  /* overflow: hidden; */
+  background-color: #eeebd4;
+  /* background-color: #fffaca; */
+  /* font-family: 'Shadows Into Light', cursive; */
 }
+
+.snowfall {
+  opacity: 0.5;
+  /* Other styles... */
+}
+
+#yfh {
+  font-family: 'Nanum Pen Script', cursive;
+  /* font-family: 'Nanum Brush Script', cursive; */
+
+  /* font-family: 'Gloria Hallelujah', cursive; */
+
+
+  /* font-family: 'Just Me Again Down Here', cursive; */
+
+  /* font-family: 'Shadows Into Light', cursive; */
+  /* font-family: 'Sue Ellen Francisco', cursive; */
+
+  font-size: 3em;
+  color: #974;
+  text-shadow: 1px 1px 1px #974;
+}
+
+/* 
+body::after {
+  content: "";
+  background: url('./assets/noisy_image.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.05;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+} */
