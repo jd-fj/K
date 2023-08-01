@@ -25,7 +25,18 @@ body {
 
   font-size: 3em;
   color: #974;
-  text-shadow: 1px 1px 1px #974;
+  text-shadow: 1px 1px 1px rgb(201, 165, 112);
+}
+
+#linkies {
+   /* font-family: 'Shadows Into Light', cursive; */
+   /* font-family: 'Just Me Again Down Here', cursive; */
+   /* font-family: 'Sue Ellen Francisco', cursive; */
+   /* font-family: 'Nanum Pen Script', cursive; */
+   /* font-family: 'Edu SA Beginner', cursive; */
+   font-family: 'Cherry Bomb One', cursive;
+   font-size: 150%;
+   /* color:#5d712b; */
 }
 
 /* 
@@ -44,3 +55,16 @@ body::after {
   position: absolute;
   z-index: -1;   
 } */
+
+#line1 {
+  height: 5px;
+  width: 100%;
+  background-color: #974;
+  z-index: -1;
+}
+#line2 {
+  height: 3px;
+  width: 100%;
+  background-color: #d4aa20;
+  z-index: -1;
+}

@@ -3,7 +3,7 @@ import { useState } from 'preact/hooks';
 import { FunctionComponent } from 'preact';
 
 const Palette: FunctionComponent = () => {
-  const initialColors = ['2b2521', '974', '85a138', 'd4c84a', 'd4aa20', 'd47a20', 'fffaca', '970']
+  const initialColors = ['2b2521', '974', '8b5e3c', '85a138', '5d712b', 'd4aa20', 'd47a20', 'fffaca']
   const [colors, setColors] = useState<string[]>(initialColors);
 
   // change the color of the input that was changed
