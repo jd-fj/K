@@ -24,7 +24,7 @@
               <div className="flex items-center w-15v h-15v sm:w-10v sm:h-10v xl:w-11v xl:h-11v">
                 <HomeFlower />
               </div>
-              <div id="yfh" className="shrink ml-2 mb-3">
+              <div id="yfh" className="text-[1em] sm:text-[3em] -ml-1 sm:ml-0 mb-0">
                 Yellow Flower Healing
                 {/* yellow flower healing */}
               </div>
