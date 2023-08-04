@@ -21,7 +21,7 @@ export function App() {
   return (
     <>
       <NavBar />
-      <div className="min-h-screen">
+
         <Router>
           <YellowFlower default path="/" />
           <About path="K/about" />
@@ -30,7 +30,6 @@ export function App() {
           <Sessions path="K/sessions" />
           <Palette path="K/palette" />
         </Router>
-      </div>
     </>
   );
 }

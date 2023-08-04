@@ -178,11 +178,12 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
     }
 
     function bindEvents() {
-      element.addEventListener("mousemove", onMouseMove);
-      element.addEventListener("touchmove", onTouchMove, { passive: true });
-      element.addEventListener("touchstart", onTouchMove, { passive: true });
+      window.addEventListener("mousemove", onMouseMove);
+      window.addEventListener("touchmove", onTouchMove, { passive: true });
+      window.addEventListener("touchstart", onTouchMove, { passive: true });
       window.addEventListener("resize", onWindowResize);
     }
+    
 
     function onWindowResize(_e: any) {
       width = window.innerWidth;
@@ -272,14 +273,15 @@ export function useFairyDustCursor(options?: { colors?: string[], element?: HTML
     function destroy() {
       window.cancelAnimationFrame(animationFrame);
       window.removeEventListener("resize", onWindowResize);
-      element.removeEventListener("mousemove", onMouseMove);
-      element.removeEventListener("touchmove", onTouchMove);
-      element.removeEventListener("touchstart", onTouchMove);
-
+      window.removeEventListener("mousemove", onMouseMove);
+      window.removeEventListener("touchmove", onTouchMove);
+      window.removeEventListener("touchstart", onTouchMove);
+    
       if (canvas) {
         canvas.remove();
       }
     }
+    
 
     init();
 
