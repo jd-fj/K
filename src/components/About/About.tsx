@@ -40,7 +40,7 @@ const About: FunctionComponent = () => {
         <p className="sm:mb-5">Kalee</p>
       </div>
 
-      <div id="aboutImage" className="flex justify-center  items-start flex-1 mx-5 sm:mx-20 mb-5">
+      <div id="aboutImage" className="flex justify-center  items-start flex-1 mx-5 sm:mx-20 mb-5 mt-5 sm:mt-0">
   <img
     src={about}
     alt="standing and looking cute"
