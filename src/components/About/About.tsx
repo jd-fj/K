@@ -3,8 +3,6 @@ import { FunctionComponent } from "preact";
 import about from "../../assets/about.jpg";
 
 const About: FunctionComponent = () => {
-  let string = "8 years ago I opened my path to yoga"
-  console.log("string length: ", string.length)
   return (
     <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 ">
       <div id="aboutText" className="flex-1 text-xl mx-5 sm:mx-10 text-center">
