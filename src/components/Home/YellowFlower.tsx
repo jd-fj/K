@@ -1,14 +1,14 @@
 // YellowFlower.tsx
 import { FunctionalComponent } from 'preact';
-import { useFairyDustCursor } from '../../cursor/useFairyDustCursor';
+// import { useFairyDustCursor } from '../../cursor/useFairyDustCursor';
 import SnowFall from './SnowFall';
 
 const YellowFlower: FunctionalComponent = () => {
-  useFairyDustCursor({
-     colors: [
-    '#d4aa20', 
-    '#e2b933'
-  ]});
+  // useFairyDustCursor({
+  //    colors: [
+  //   '#d4aa20', 
+  //   '#e2b933'
+  // ]});
   return (
     <div className="">
     <SnowFall />

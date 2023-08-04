@@ -5,7 +5,7 @@ import about from "../../assets/about.jpg";
 const About: FunctionComponent = () => {
   return (
     <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 ">
-      <div id="aboutText" className="flex-1 text-lg mx-5 sm:mx-10 text-center">
+      <div id="aboutText" className="flex-[2.5] text-xl mx-5 sm:mx-10 text-center">
         <p className="mb-5">A little about me ~</p>
 
         <p className="mb-5">
@@ -24,15 +24,15 @@ const About: FunctionComponent = () => {
 
         <p className="mb-5">My other knowledge/interests:</p>
 
-        <p className="mb-2">Chakra System</p>
-        <p className="mb-2">Buddhism</p>
-        <p className="mb-2">Hatha Yoga</p>
-        <p className="mb-2">Internal Family System</p>
-        <p className="mb-2">Nonviolent Communication</p>
+        <p className="-mb-1">Chakra System</p>
+        <p className="-mb-1">Buddhism</p>
+        <p className="-mb-1">Hatha Yoga</p>
+        <p className="-mb-1">Internal Family System</p>
+        <p className="-mb-1">Nonviolent Communication</p>
         <p className="mb-5">Crystal Connection</p>
 
         <p className="mb-5">
-          Thank you for visiting {`<3`} If it feels right for you, please reach
+          Thank you for visiting ❤︎{`<3`} If it feels right for you, please reach
           out.
         </p>
 
@@ -44,7 +44,7 @@ const About: FunctionComponent = () => {
   <img
     src={about}
     alt="standing and looking cute"
-    className="w-3/4 object-contain"
+    className=" object-contain"
   />
 </div>
 

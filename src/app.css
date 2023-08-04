@@ -1,9 +1,24 @@
 /* app.css */
 body {
   /* overflow: hidden; */
+  color: #8b5e3c;
   background-color: #eeebd4;
   /* background-color: #fffaca; */
   /* font-family: 'Shadows Into Light', cursive; */
+  /* font-family: 'Times New Roman', Arial, sans-serif; */
+
+  /* font-family: 'Dosis', sans-serif; */
+
+  /* font-family: 'Fira Sans Condensed', sans-serif; */
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-family: 'Roboto Condensed', sans-serif; */
+  /* font-family: 'Victor Mono', monospace; */
+  /* font-family: 'Ubuntu Condensed', sans-serif; */
+  /* font-family: 'Ubuntu Condensed', sans-serif; */
+  /* font-family: 'Hina Mincho', serif; */
+  /* font-family: 'Fira Code', monospace; */
+  /* font-family: "Epilogue", sans-serif; */
+  font-family: 'Baloo 2', cursive;
 }
 
 .snowfall {
@@ -12,11 +27,10 @@ body {
 }
 
 #yfh {
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
   /* font-family: 'Nanum Brush Script', cursive; */
 
   /* font-family: 'Gloria Hallelujah', cursive; */
-
 
   /* font-family: 'Just Me Again Down Here', cursive; */
 
@@ -29,14 +43,14 @@ body {
 }
 
 #linkies {
-   /* font-family: 'Shadows Into Light', cursive; */
-   /* font-family: 'Just Me Again Down Here', cursive; */
-   /* font-family: 'Sue Ellen Francisco', cursive; */
-   /* font-family: 'Nanum Pen Script', cursive; */
-   /* font-family: 'Edu SA Beginner', cursive; */
-   font-family: 'Cherry Bomb One', cursive;
-   font-size: 150%;
-   /* color:#5d712b; */
+  /* font-family: 'Shadows Into Light', cursive; */
+  /* font-family: 'Just Me Again Down Here', cursive; */
+  /* font-family: 'Sue Ellen Francisco', cursive; */
+  /* font-family: 'Nanum Pen Script', cursive; */
+  /* font-family: 'Edu SA Beginner', cursive; */
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 150%;
+  /* color:#5d712b; */
 }
 
 /* 
