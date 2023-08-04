@@ -17,7 +17,7 @@ const About: FunctionComponent = () => {
 
         <p className="mb-5">
           My interest in spirituality and alternative healing continued to grow
-          and lead me to be curious about the healing power of love and energy.
+          and led me to be curious about the healing power of love and energy.
           As a Reiki recipient and Practinioner, I am truly *blissed* to be able
           to share this experience with you all.
         </p>
@@ -36,7 +36,7 @@ const About: FunctionComponent = () => {
           out.
         </p>
 
-        <p className="">Nameste</p>
+        <p className="">Namaste</p>
         <p className="sm:mb-5">Kalee</p>
       </div>
 
