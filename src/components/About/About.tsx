@@ -3,9 +3,11 @@ import { FunctionComponent } from "preact";
 import about from "../../assets/about.jpg";
 
 const About: FunctionComponent = () => {
+  let string = "8 years ago I opened my path to yoga"
+  console.log("string length: ", string.length)
   return (
     <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 ">
-      <div id="aboutText" className="flex-[2.5] text-xl mx-5 sm:mx-10 text-center">
+      <div id="aboutText" className="flex-1 text-xl mx-5 sm:mx-10 text-center">
         <p className="mb-5">A little about me ~</p>
 
         <p className="mb-5">
@@ -32,7 +34,7 @@ const About: FunctionComponent = () => {
         <p className="mb-5">Crystal Connection</p>
 
         <p className="mb-5">
-          Thank you for visiting ❤︎{`<3`} If it feels right for you, please reach
+          Thank you for visiting ❤︎ If it feels right for you, please reach
           out.
         </p>
 
