@@ -1,26 +1,27 @@
 {
-  "name": "yellowflower",
+  "name": "yfe",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jd-fj.github.io/K",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview --port 8069",
-    "deploy": "npm run build && gh-pages -d dist"
+    "build": "vite build",
+    "start": "vite preview --port 5173"
   },
+  
   "dependencies": {
     "preact": "^10.15.1",
-    "preact-router": "^4.1.1"
+    "preact-router": "^4.1.1",
+    "serve": "^12.0.0"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.3",
     "@preact/preset-vite": "^2.5.0",
     "autoprefixer": "^10.4.14",
     "gh-pages": "^5.0.0",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.1.6",
-    "vite": "^4.3.2"
+    "vite": "^4.4.9"
   }
 }

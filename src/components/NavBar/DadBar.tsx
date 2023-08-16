@@ -5,10 +5,10 @@
   import { Link } from "preact-router/match";
 
   const navLinks = [
-    ["Reiki", "/K/reiki"],
-    ["Sessions", "/K/sessions"],
-    ["About", "/K/about"],
-    ["Palette", "/K/palette"],
+    ["Reiki", "/reiki"],
+    ["Sessions", "/sessions"],
+    ["About", "/about"],
+    ["Palette", "/palette"],
   ];
 
   const JavBar: FunctionalComponent = () => {
@@ -19,7 +19,7 @@
             <MountainNav />
           </div>
 
-          <Link id="homeLink" href="/K/">
+          <Link id="homeLink" href="/">
             <div className="absolute md:top-0 -top-10 left-0 flex items-center">
               <div className="flex items-center w-15v h-15v sm:w-10v sm:h-10v xl:w-11v xl:h-11v">
                 <HomeFlower />
@@ -36,8 +36,7 @@
         "> */}
           <div
             id="linkies"
-            className="absolute right-0 top-[80%] flex w-full sm:w-1/2 justify-around
-        "
+            className="absolute right-0 top-[80%] flex w-full sm:w-1/2 justify-around text-[150%]"
           >
             {navLinks.map(([title, url]) => (
               <Link key={title} className="" href={url}>

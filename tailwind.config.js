@@ -1,3 +1,4 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 export default {
@@ -6,6 +7,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    minHeight: {
+      '0': '0',
+      'content': 'fit-content',
+      'full': '100%',
+      'screen': '100vh',
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

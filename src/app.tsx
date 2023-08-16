@@ -24,11 +24,11 @@ export function App() {
 
         <Router>
           <YellowFlower default path="/" />
-          <About path="K/about" />
-          <Film path="K/film" />
-          <Reiki path="K/reiki" />
-          <Sessions path="K/sessions" />
-          <Palette path="K/palette" />
+          <About path="/about" />
+          <Film path="/film" />
+          <Reiki path="/reiki" />
+          <Sessions path="/sessions" />
+          <Palette path="/palette" />
         </Router>
     </>
   );

@@ -3,6 +3,7 @@ body {
   color: #8b5e3c;
   background-color: #eeebd4;
   font-family: 'Baloo 2', cursive;
+  overflow: auto;
 }
 
 #homepage {
@@ -21,7 +22,12 @@ body {
 
 #linkies {
   font-family: "Cherry Bomb One", cursive;
+<<<<<<< Updated upstream
   font-size: 150%;
+=======
+  /* font-size: 150%; */
+  /* color:#5d712b; */
+>>>>>>> Stashed changes
 }
 
 #line1 {
