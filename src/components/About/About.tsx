@@ -1,6 +1,6 @@
 // About.tsx
 import { FunctionComponent } from "preact";
-import about from '/src/assets/about.jpg';
+import about from '/src/assets/about2.jpg';
 
 const About: FunctionComponent = () => {
   return (
