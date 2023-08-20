@@ -15,8 +15,8 @@ const navLinks = [
 const JavBar: FunctionalComponent = () => {
   return (
     <>
-      <nav className="relative top-10 md:top-0">
-        <div className="">
+      <nav id="eff" className="relative top-10 md:top-0 semi-transparent-gradient">
+        <div  className="">
           <MountainNav />
         </div>
 
