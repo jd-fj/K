@@ -4,8 +4,8 @@ import about from '/src/assets/about2.jpg';
 
 const About: FunctionComponent = () => {
   return (
-    <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 gap-[6%]">
-      <div id="aboutText" className="flex-1  text-xl sm:ml-[15%] text-center">
+    <div id="parentDiv" className="flex flex-col-reverse md:flex-row mt-20 gap-[6%] ">
+      <div id="aboutText" className="flex-1  text-xl md:ml-[15%] text-center md:mx-0 mx-10">
         <p className="mb-5 -mt-4">A little about me ~</p>
 
         <p className="mb-5">
@@ -41,7 +41,7 @@ const About: FunctionComponent = () => {
 
       <div
         id="aboutImage"
-        className="flex justify-center items-start flex-1 mb-5 mt-5 sm:mr-40 sm:mt-0 overflow-hidden sm:p-0 p-2.5 "
+        className="flex justify-center items-start flex-1 mb-5 mt-5 md:mr-[10%] sm:mt-0 overflow-hidden  mx-10 md:mx-0"
       >
         <img
           src={about}
