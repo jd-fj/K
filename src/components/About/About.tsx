@@ -1,6 +1,6 @@
 // About.tsx
 import { FunctionComponent } from "preact";
-
+import about from '/src/assets/about.jpg';
 
 const About: FunctionComponent = () => {
   return (
@@ -44,7 +44,7 @@ const About: FunctionComponent = () => {
         className="flex justify-center items-start flex-1 mb-5 mt-5 sm:mr-40 sm:mt-0 overflow-hidden sm:p-0 p-2.5"
       >
         <img
-          src="/src/assets/about.jpg"
+          src={about}
           alt="standing and looking cute"
           className="sm:-mx-2.5 object-contain"
         />
