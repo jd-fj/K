@@ -25,7 +25,7 @@
                 <HomeFlower />
               </div>
               <div id="yfh" className="text-[1em] sm:text-[3em] -ml-1 sm:ml-0 mb-0">
-                Yellow Flower Healing
+                Yellow Flower Energy
                 {/* yellow flower healing */}
               </div>
             </div>

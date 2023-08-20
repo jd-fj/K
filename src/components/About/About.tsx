@@ -4,9 +4,9 @@ import { FunctionComponent } from "preact";
 
 const About: FunctionComponent = () => {
   return (
-    <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 ">
-      <div id="aboutText" className="flex-1 text-xl mx-5 sm:mx-10 text-center">
-        <p className="mb-5">A little about me ~</p>
+    <div id="parentDiv" className="flex flex-col-reverse sm:flex-row mt-20 gap-6">
+      <div id="aboutText" className="flex-1 flex-shrink-0 text-xl sm:ml-60 text-center">
+        <p className="mb-5 -mt-4">A little about me ~</p>
 
         <p className="mb-5">
           8 years ago I opened my path to yoga and eventually joined a Yoga
@@ -41,12 +41,12 @@ const About: FunctionComponent = () => {
 
       <div
         id="aboutImage"
-        className="flex justify-center  items-start flex-1 mx-5 sm:mx-20 mb-5 mt-5 sm:mt-0"
+        className="flex justify-center items-start flex-1 mb-5 mt-5 sm:mr-40 sm:mt-0 overflow-hidden sm:p-0 p-2.5"
       >
         <img
           src="/src/assets/about.jpg"
           alt="standing and looking cute"
-          className=" object-contain"
+          className="sm:-mx-2.5 object-contain"
         />
       </div>
     </div>
