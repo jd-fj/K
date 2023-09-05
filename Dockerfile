@@ -12,7 +12,7 @@ COPY . .
 RUN npm run build
 
 # Use Nginx to serve the built app
-FROM nginx:alpine
+FROM nginx:latest
 
 # Copy the custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
