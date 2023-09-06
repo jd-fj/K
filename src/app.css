@@ -1,9 +1,12 @@
 /* app.css */
 body {
-  color: #8b5e3c;
+  color: #974;
   background-color: #eeebd4;
   font-family: 'Baloo 2', cursive;
   overflow: auto;
+}
+h1 {
+  color: #8b5e3c
 }
 
 #homepage {
