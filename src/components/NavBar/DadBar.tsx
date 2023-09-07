@@ -15,13 +15,13 @@ const navLinks = [
 const JavBar: FunctionalComponent = () => {
   return (
     <>
-      <nav id="eff" className="relative top-10 md:top-0 semi-transparent-gradient">
+      <nav id="eff" className="relative top-10 md:top-3 semi-transparent-gradient">
         <div  className="">
           <MountainNav />
         </div>
 
         <Link id="homeLink" href="/">
-          <div className="absolute md:top-0 -top-10 left-0 flex items-center">
+          <div className="absolute md:-top-2 -top-10 left-0 flex items-center">
             <div className="flex items-center w-15v h-15v sm:w-10v sm:h-10v xl:w-11v xl:h-11v">
               <HomeFlower />
             </div>

@@ -30,6 +30,9 @@ const About: FunctionComponent = () => {
         <p className="mb-5">Pressure Point Massage</p>
 
         <p className="mb-5">
+        As a now Reiki Practitioner myself, I feel truly *blissed* to be able to share the love and kindness of Reiki and Mindfulness with others. This is all work I am still doing and I just feel so grateful for the wisdom passed down from all my spiritual teachers and friends. If you feel in need of healing, I’d love to connect and see if I can help or guide in any way.
+        </p>
+        <p className="mb-5">
           Appreciate you visiting ❤︎
         </p>
 

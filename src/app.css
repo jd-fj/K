@@ -4,7 +4,67 @@ body {
   background-color: #eeebd4;
   font-family: 'Baloo 2', cursive;
   overflow: auto;
+  position: relative; 
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-size: 1800px 1800px;
+  background-image: url('/src/assets/sparkle3.jpg');
+  background-repeat: repeat;
+  height: 100%;
+  min-height: 100vh; 
+  width: 100%; 
+  opacity: .03;
+  pointer-events: none;
+  z-index: -1;
+  filter: invert(1);
+  mix-blend-mode: color-burn;
+  /* mix-blend-mode:hard-light */
+}
+
+  /* background-image: url('/src/assets/sparkle4.jpg');
+  background-size: cover;
+  background-blend-mode: difference;  */
+
+/* body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  opacity: 0.05;
+  pointer-events: none; 
+  z-index: -1;
+} */
+
+/* #eff {
+  position: relative; 
+}
+
+#eff::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; 
+
+  background-image: url('/src/assets/sparkle4.jpg');
+  background-size: cover; 
+  background-position: center; 
+
+  filter: invert(1); 
+  opacity: 0.5; 
+} */
+
 h1 {
   color: #8b5e3c
 }
