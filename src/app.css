@@ -23,8 +23,7 @@ body::before {
   pointer-events: none;
   z-index: -1;
   filter: invert(1);
-  mix-blend-mode: color-burn;
-  /* mix-blend-mode:hard-light */
+  /* mix-blend-mode: color-burn; */
 }
 
   /* background-image: url('/src/assets/sparkle4.jpg');
