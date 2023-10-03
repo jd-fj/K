@@ -1,5 +1,5 @@
 /* app.css */
-body {
+/* body {
   color: #974;
   background-color: #eeebd4;
   font-family: 'Baloo 2', cursive;
@@ -23,8 +23,7 @@ body::before {
   pointer-events: none;
   z-index: -1;
   filter: invert(1);
-  /* mix-blend-mode: color-burn; */
-}
+} */
 
   /* background-image: url('/src/assets/sparkle4.jpg');
   background-size: cover;
@@ -64,6 +63,22 @@ body::before {
   opacity: 0.5; 
 } */
 
+body {
+  /* color: #974; */
+  /* background-color: #eeebd4; */
+  font-family: 'Baloo 2', cursive;
+  overflow: auto;
+  position: relative; 
+  /* background-image: url('/src/assets/sky.jpg'); */
+}
+
+/* body::before {
+  content: "";
+  position: absolute;
+  background-image: url('/src/assets/sky.jpg');
+  background-repeat: repeat;
+} */
+
 h1 {
   color: #8b5e3c
 }
@@ -77,7 +92,9 @@ h1 {
 }
 
 #yfh {
-  font-family: "Nanum Pen Script", cursive;
+  font-family: 'Lemon', cursive;
+  /* font-family: "Nanum Pen Script", cursive; */
+  /* color: #974; */
   color: #974;
   text-shadow: 1px 1px 1px rgb(201, 165, 112);
 }

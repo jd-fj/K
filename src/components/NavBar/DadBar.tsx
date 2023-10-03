@@ -27,9 +27,10 @@ const JavBar: FunctionalComponent = () => {
             </div>
             <div
               id="yfh"
-              className="text-[1em] sm:text-[3em] -ml-1 sm:ml-0 mb-0"
+              className="text-[1em] sm:text-[2em] -ml-1 sm:ml-0 mb-0"
             >
-              Yellow Flower Energy
+              <h2>Yellow Flower</h2>
+              <h2>Holistic Healing</h2>
               {/* yellow flower healing */}
             </div>
           </div>

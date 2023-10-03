@@ -1,56 +1,24 @@
-// import { FunctionalComponent } from "preact";
-// import { useState } from "preact/hooks";
-// import { Link } from "preact-router/match";
-// import HamburgerIcon from "./Hamburger";
-// import Ex from "./Ex";
-// import Wavy from "./Wavy";
+import { FunctionalComponent } from "preact";
+import { Link } from "preact-router/match";
+import "./NavBar.css";
 
-// const NavBar: FunctionalComponent = () => {
-//   const [isOpen, setIsOpen] = useState(false);
+const navLinks = [
+  ["Reiki", "/reiki"],
+  ["Sessions", "/sessions"],
+  ["About", "/about"],
+  ["Palette", "/palette"],
+];
 
-//   const toggleMenu = () => {
-//     setIsOpen(!isOpen);
-//   };
+const NavBar: FunctionalComponent = () => {
+  return (
+    <nav id="NavBar" className="flex justify-between">
+      {navLinks.map(([title, url]) => (
+        <Link key={title} className="flex-1 text-center" href={url}>
+          <span className="">{title}</span>
+        </Link>
+      ))}
+    </nav>
+  );
+};
 
-//   const handleLinkClick = () => {
-//     setIsOpen(false); // Close the menu when a link is clicked
-//   };
-
-//   return (
-//     <nav className="relative h-20">
-//       <div id="wavyDiv" className="h-20">
-//         <Wavy />
-//       </div>
-//       <div className="absolute bottom-0 flex justify-between items-end w-full px-4 md:px-0">
-//         <Link onClick={handleLinkClick} href="/K/" className="">
-//           yellow flower healing
-//         </Link>
-
-//         <div className="md:hidden">
-//           <button onClick={toggleMenu} className="mt-0 ">
-//             {isOpen ? <Ex /> : <HamburgerIcon />}
-//           </button>
-//         </div>
-//       </div>
-
-//       <div
-//         className={`${
-//           isOpen ? "flex flex-col items-end" : "hidden"
-//         } md:flex md:items-center md:justify-between`}
-//       >
-//         {[
-//           ["Reiki", "/K/reiki"],
-//           ["Sessions", "/K/sessions"],
-//           ["About", "/K/about"],
-//           ["Palette", "/K/palette"],
-//         ].map(([title, url]) => (
-//           <Link onClick={handleLinkClick} key={title} href={url} className="">
-//             {title}
-//           </Link>
-//         ))}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default NavBar;
+export default NavBar;
