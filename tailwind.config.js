@@ -14,38 +14,47 @@ export default {
       'screen': '100vh',
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      slate: colors.slate,
-      gray: colors.gray,
-      zinc: colors.zinc,
-      neutral: colors.neutral,
-      stone: colors.stone,
-      red: colors.red,
-      orange: colors.orange,
-      amber: colors.amber,
-      yellow: colors.yellow,
-      lime: colors.lime,
-      green: colors.green,
-      emerald: colors.emerald,
-      teal: colors.teal,
-      cyan: colors.cyan,
-      sky: colors.sky,
-      blue: colors.blue,
-      indigo: colors.indigo,
-      violet: colors.violet,
-      purple: colors.purple,
-      fushsia: colors.fushsia,
-      pink: colors.pink,
-      rose: colors.rose,
-      black: colors.black,
-      white: colors.white,
+      green: {
+        100: "#c9e094",
+        200: "#83A03d",
+        300: '#657548',
+        400: '#2b3d1f'
+      },
+      yellow: {
+        100: "#fbf060",
+        200: "#e2ce35",
+        300: '#d4ab29',
+        400: '#a28c31'
+      },
+      orange: {
+        100: "#ecb741",
+        200: "#ef932e",
+        300: '#d47a28',
+        400: '#aa6829'
+      },
       brown: {
-        100: "#974",
-        200: "#2b2521",
-        300: '#8d6b3b',
-        400: '#725216'
-      }
+        100: "#e2ca99",
+        200: "#997744",
+        300: '#8d5a24',
+        400: '#3f2a1c'
+      },
+      white: {
+        100: "#fbf9ec",
+        200: "#f9f4d4",
+        300: '#e0c67b',
+        400: '#c39e4c'
+      },
+      accent: {
+        100: "#f8d7d7",
+        200: "#dce7e6",
+        300: '#8e4e3d',
+        400: '#ddcde2'
+      },
+      black: {
+        100: "#414042",
+        200: "#231f20"
+      },
+
     },
     screens: {
       xs: "250px",
