@@ -15,7 +15,7 @@ const NavBar: FunctionalComponent = () => {
   return (
     // Big Papa Parent Div
     <div className="flex flex-col items-stretch">
-      {/* Top Horizontal Line */}
+      {/* Top Horizontal Row */}
       <div className="flex items-center justify-between ">
         <div className="w-28 h-auto md:w-36 mt-2 ">
           <img src={butterfly} class="ml-1" alt="butterfly" />
@@ -44,12 +44,13 @@ const NavBar: FunctionalComponent = () => {
         </div>
       </div>
 
-{/* Middle Horizontal Line */}
-<nav id="NavLinks" className="flex justify-between mb-4">
+{/* Middle Horizontal Row */}
+<nav id="NavLinks" className="flex justify-between sm:justify-center mb-6 space-x-0 sm:space-x-6 md:space-x-12 lg:space-x-24">
+
     {navLinks.map(([title, url]) => (
         <Link
             key={title}
-            className="link-hover flex-1 text-center responsive-text"
+            className="link-hover flex-1 text-center responsive-text sm:flex-none"
             href={url}
         >
             <div className="link-child inline-block px-2 py-1 text-green-200 rounded-lg">
@@ -59,9 +60,8 @@ const NavBar: FunctionalComponent = () => {
     ))}
 </nav>
 
-
-      {/* Bottom Horizontal Line */}
-      <div className="w-full">
+      {/* Bottom Horizontal Row */}
+      <div className="w-full -mt-4">
         <div
           className="w-full"
           style={{ height: "3px", backgroundColor: "#997744" }}
