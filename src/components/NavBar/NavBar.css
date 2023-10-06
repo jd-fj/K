@@ -1,5 +1,4 @@
-/* 
-.responsive-text {
-    font-size: 2vw;
-}
-   */
+/* /* styles.css or similar */
+.link-hover:hover .link-child {
+    background-color: #c9e094; /* Color code for bg-green-200 in default Tailwind palette */
+  } 
