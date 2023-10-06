@@ -4,8 +4,27 @@ body {
   font-family: 'Baloo 2', cursive;
   overflow: auto;
   position: relative; 
+  background-image: url('src/assets/texch.png');
+  background-size: 30%; /* we liked 30/40%
+  /* opacity: .5; */
+  /* background-color: rgb(247, 245, 238); */
+  /* background-color: #ffdddd; */
 }
 
-#linkies {
+#NavLinks {
   font-family: "Cherry Bomb One", cursive;
+  /* font-size: 3em; */
+  font-size: clamp(1.5em, 2vw, 5em);
 }
+
+#homeLink {
+  font-size: clamp(.35em, 1vw, 2em);
+}
+
+/* h1 {
+  color: pink;
+}
+
+p {
+  color: purple
+} */
