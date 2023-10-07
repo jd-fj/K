@@ -1,4 +1,5 @@
-/* /* styles.css or similar */
+/* /* navbar.css  */
 .link-hover:hover .link-child {
-    background-color: #c9e094; /* Color code for bg-green-200 in default Tailwind palette */
+    background-color: #c9e094;
+    /* Color code for bg-green-200 in default Tailwind palette */
   } 
