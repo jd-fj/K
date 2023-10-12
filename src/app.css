@@ -5,10 +5,7 @@ body {
   overflow: auto;
   position: relative; 
   background-image: url('src/assets/texch.png');
-  background-size: 30%; /* we liked 30/40%
-  /* opacity: .5; */
-  /* background-color: rgb(247, 245, 238); */
-  /* background-color: #ffdddd; */
+  background-size: 30%; 
 }
 
 #NavLinks {
