@@ -18,10 +18,12 @@ body {
   font-size: clamp(.35em, 1vw, 2em);
 }
 
-/* h1 {
-  color: pink;
+h1 {
+  color: #231f20; /* This is the text fill color */
+  -webkit-text-stroke-width: .25px; /* Stroke width */
+  -webkit-text-stroke-color: #c9e094; /* Stroke color, in this case, red */
 }
 
 p {
-  color: purple
-} */
+  color: #3f2a1c;
+}
