@@ -1,12 +1,13 @@
 /* YellowFlower.css */
-@keyframes forward {
-  to {
-    stroke-dashoffset: 0;
-  }
+.swirly-hand-animation .forward {
+  animation: drawPath 5s infinite; /* 5s is the duration. Adjust as needed. */
 }
 
-.swirly-hand-animation .forward {
-  stroke-width: 2px;
-  fill: none;
-  animation: forward 20s infinite alternate linear;
+@keyframes drawPath {
+  0%, 100% {
+    stroke-dashoffset: var(--path-length);
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
 }

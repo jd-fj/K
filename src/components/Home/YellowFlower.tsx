@@ -1,13 +1,13 @@
 // YellowFlower.tsx
 import { FunctionalComponent } from "preact";
 import SwirlyHand from "../../assets/SwirlyHand";
-import './YellowFlower.css'
+import "./YellowFlower.css";
 
 const YellowFlower: FunctionalComponent = () => {
   return (
-    <div className="h-1/4 w-1/4">
-      <div id="homepage" className="">
-        <SwirlyHand/>
+    <div className="flex justify-center m-5 ">
+      <div id="homepage" className="sm:h-1/4 sm:w-1/4 h-3/4 w-3/4">
+        <SwirlyHand />
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import { FunctionalComponent } from "preact";
 import { Link } from "preact-router/match";
 import Full from "../../assets/Full";
-import "./NavBar.css";
 
 const navLinks = [
   ["Reiki", "/reiki"],
