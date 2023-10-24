@@ -1,6 +1,6 @@
-/* YellowFlower.css */
+/* css */
 .swirly-hand-animation .forward {
-  animation: drawPath 5s infinite; /* 5s is the duration. Adjust as needed. */
+  animation: drawPath 15s infinite; /* 5s is the duration. Adjust as needed. */
 }
 
 @keyframes drawPath {
