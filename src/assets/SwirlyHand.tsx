@@ -4,18 +4,25 @@ import { useEffect, useRef } from "preact/hooks";
 const SwirlyHand = () => {
   const pathRef = useRef<SVGPathElement>(null);
   const pathRef2 = useRef<SVGPathElement>(null);
+
   useEffect(() => {
+    // Logic for pathRef
     if (pathRef.current) {
       const length = pathRef.current.getTotalLength();
       pathRef.current.style.strokeDasharray = `${length}`;
+      pathRef.current.style.strokeDashoffset = `${length}px`;
       pathRef.current.style.setProperty("--path-length", `${length}px`);
     }
+
+    // Logic for pathRef2 (if needed later)
     if (pathRef2.current) {
       const length = pathRef2.current.getTotalLength();
       pathRef2.current.style.strokeDasharray = `${length}`;
+      pathRef2.current.style.strokeDashoffset = `${length}px`;
       pathRef2.current.style.setProperty("--path-length", `-${length}px`);
     }
-  }, []);
+}, []);
+
 
   return (
     <svg
@@ -37,7 +44,7 @@ const SwirlyHand = () => {
       />
       <path
         ref={pathRef2}
-        class="forward"
+        class="back"
         style={{
           fill: "none",
           stroke: "#d4ab29",

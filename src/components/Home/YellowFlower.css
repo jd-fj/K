@@ -1,13 +1,28 @@
-/* css */
-.swirly-hand-animation .forward {
-  animation: drawPath 15s infinite; /* 5s is the duration. Adjust as needed. */
-}
-
 @keyframes drawPath {
-  0%, 100% {
-    stroke-dashoffset: var(--path-length);
+  0% {
+    stroke-dashoffset: var(--path-length); 
   }
   50% {
-    stroke-dashoffset: 0;
+    stroke-dashoffset: calc(var(--path-length) / 2.07); 
   }
 }
+
+.swirly-hand-animation .forward {
+  animation: drawPath 10s linear forwards;
+}
+
+
+@keyframes drawPath2 {
+  0% {
+    stroke-dashoffset: var(--path-length); 
+  }
+  50% {
+    stroke-dashoffset: calc(var(--path-length) / 1.94); 
+  }
+}
+
+.swirly-hand-animation .back {
+  animation: drawPath2 10s linear forwards;
+}
+
+
