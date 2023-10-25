@@ -2,27 +2,24 @@
   0% {
     stroke-dashoffset: var(--path-length); 
   }
-  50% {
+  100% {
     stroke-dashoffset: calc(var(--path-length) / 2.07); 
   }
 }
 
 .swirly-hand-animation .forward {
-  animation: drawPath 10s linear forwards;
+  animation: drawPath 6s ease-in-out forwards;
 }
-
 
 @keyframes drawPath2 {
   0% {
     stroke-dashoffset: var(--path-length); 
   }
-  50% {
+  100% {
     stroke-dashoffset: calc(var(--path-length) / 1.94); 
   }
 }
 
 .swirly-hand-animation .back {
-  animation: drawPath2 10s linear forwards;
+  animation: drawPath2 6s ease-in-out forwards;
 }
-
-
