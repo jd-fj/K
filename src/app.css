@@ -4,7 +4,7 @@ body {
   font-family: 'Baloo 2', cursive;
   overflow: auto;
   position: relative; 
-  background-image: url('src/assets/texch.png');
+  background-image: url('../src/assets/texch.png');
   background-size: 30%; 
 }
 
