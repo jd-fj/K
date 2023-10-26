@@ -9,7 +9,8 @@ const Palette: FunctionComponent = () => {
     '#e2ca99', '#997744', '#8d5a24', '#3f2a1c',
     '#fbf9ec', '#f9f4d4', '#e0c67b', '#c39e4c',
     '#f8d7d7', '#dce7e6', '#8e4e3d', '#ddcde2',
-    '#231f20', '#414042'
+    '#231f20', '#414042', '#000','#000',
+    '#fcb7b1','#f9c794','#d3b2de','#fff99f','#c9e094','#99ccdd',
   ]);
 
   return (
