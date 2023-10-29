@@ -6,7 +6,7 @@ import "./YellowFlower.css";
 const YellowFlower: FunctionalComponent = () => {
   return (
     <div className="flex justify-center m-5 ">
-      <div id="homepage" className="sm:h-1/4 sm:w-1/4 h-3/4 w-3/4 mr-3">
+      <div id="homepage" className="sm:h-1/4 sm:w-1/4 h-3/4 w-3/4 mr-4">
         <SwirlyHand />
       </div>
     </div>
