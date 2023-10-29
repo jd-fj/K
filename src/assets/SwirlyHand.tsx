@@ -6,24 +6,48 @@ const SwirlyHand = () => {
   const pathRef2 = useRef<SVGPathElement>(null);
 
   useEffect(() => {
-    // Logic for pathRef
     if (pathRef.current) {
       const length = pathRef.current.getTotalLength();
-      console.log("path1 length:", length)
-      pathRef.current.style.strokeDasharray = `${length}`;
-      pathRef.current.style.strokeDashoffset = `${length}px`;
-      pathRef.current.style.setProperty("--path-length", `${length}px`);
+      pathRef.current.style.strokeDasharray = `${length} ${length}`;
+      pathRef.current.style.strokeDashoffset = `${length}`;
+      pathRef.current.getBoundingClientRect(); 
+      // Adding ease-in-out to the transition
+      pathRef.current.style.transition = 'stroke-dashoffset 2s ease-in-out';
+      pathRef.current.style.strokeDashoffset = `${length / 2.061}`;
     }
 
     if (pathRef2.current) {
       const length = pathRef2.current.getTotalLength();
-      console.log("path2 length:", length)
-      pathRef2.current.style.strokeDasharray = `${length}`;
-      pathRef2.current.style.strokeDashoffset = `${length}px`;
-      pathRef2.current.style.setProperty("--path-length", `-${length}px`);
+      pathRef2.current.style.strokeDasharray = `${length} ${length}`;
+      pathRef2.current.style.strokeDashoffset = `-${length}`;
+      pathRef2.current.getBoundingClientRect();
+      // Adding ease-in-out to the transition
+      pathRef2.current.style.transition = "stroke-dashoffset 2s ease-in-out";
+      pathRef2.current.style.strokeDashoffset = `-${length / 1.943}`;
     }
-}, []);
+  });
 
+  //   useEffect(() => {
+  //     if (pathRef.current) {
+  //       const length = pathRef.current.getTotalLength();
+  //       pathRef.current.style.strokeDasharray = `${length} ${length}`;
+  //       pathRef.current.style.strokeDashoffset = `-${length}`;
+  //       pathRef.current.getBoundingClientRect();
+  //       // Adding ease-in-out to the transition
+  //       pathRef.current.style.transition = 'stroke-dashoffset 2s ease-in-out';
+  //       pathRef.current.style.strokeDashoffset = `-${length / 2.06}`;
+  //     }
+  //   if (pathRef2.current) {
+  //     const length = pathRef.current.getTotalLength();
+  //     pathRef.current.style.strokeDasharray = `${length} ${length}`;
+  //     pathRef.current.style.strokeDashoffset = `-${length}`;
+  //     pathRef.current.getBoundingClientRect();
+  //     // Adding ease-in-out to the transition
+  //     pathRef.current.style.transition = 'stroke-dashoffset 10s ease-in-out';
+  //     pathRef.current.style.strokeDashoffset = `${length / 2.06}`;
+  //   }
+
+  // }, []);
 
   return (
     <svg
