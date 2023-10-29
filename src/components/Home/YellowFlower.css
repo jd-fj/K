@@ -1,4 +1,4 @@
-/* css */
+/* yellowflower.css */
 @keyframes drawPath {
   0% {
     stroke-dashoffset: var(--path-length); 
@@ -25,10 +25,15 @@
   animation: drawPath2 6s ease-in-out forwards ;
 }
 
+.swirly-hand-animation .forward {
+  animation: 
+    drawPath 6s ease-in-out forwards ,
+    fillColor 12s ease-in-out 6s forwards;
+}
 
 @keyframes fillColor {
   0%, 100% {
-    fill: #f8d7d7; /* pink */
+    fill: #f8d7d7; /* n/a */
     fill-opacity: 0; 
   }
   15% {
@@ -36,7 +41,7 @@
     fill-opacity: 1;
   }
   30% {
-    fill: #f9c794; /* irange */
+    fill: #f9c794; /* orange */
     fill-opacity: 1;
   }
   45% {
@@ -55,11 +60,4 @@
     fill: #d3b2de; /* purple */
     fill-opacity: 1;
   }
-}
-
-
-.swirly-hand-animation .forward {
-  animation: 
-    drawPath 6s ease-in-out forwards ,
-    fillColor 12s ease-in-out 6s forwards;
 }
