@@ -12,7 +12,7 @@ const SwirlyHand = () => {
       pathRef.current.style.strokeDashoffset = `${length}`;
       pathRef.current.getBoundingClientRect(); 
       // Adding ease-in-out to the transition
-      pathRef.current.style.transition = 'stroke-dashoffset 2s ease-in-out';
+      pathRef.current.style.transition = 'stroke-dashoffset 6s ease-in-out';
       pathRef.current.style.strokeDashoffset = `${length / 2.061}`;
     }
 
@@ -22,32 +22,10 @@ const SwirlyHand = () => {
       pathRef2.current.style.strokeDashoffset = `-${length}`;
       pathRef2.current.getBoundingClientRect();
       // Adding ease-in-out to the transition
-      pathRef2.current.style.transition = "stroke-dashoffset 2s ease-in-out";
+      pathRef2.current.style.transition = "stroke-dashoffset 6s ease-in-out";
       pathRef2.current.style.strokeDashoffset = `-${length / 1.943}`;
     }
   });
-
-  //   useEffect(() => {
-  //     if (pathRef.current) {
-  //       const length = pathRef.current.getTotalLength();
-  //       pathRef.current.style.strokeDasharray = `${length} ${length}`;
-  //       pathRef.current.style.strokeDashoffset = `-${length}`;
-  //       pathRef.current.getBoundingClientRect();
-  //       // Adding ease-in-out to the transition
-  //       pathRef.current.style.transition = 'stroke-dashoffset 2s ease-in-out';
-  //       pathRef.current.style.strokeDashoffset = `-${length / 2.06}`;
-  //     }
-  //   if (pathRef2.current) {
-  //     const length = pathRef.current.getTotalLength();
-  //     pathRef.current.style.strokeDasharray = `${length} ${length}`;
-  //     pathRef.current.style.strokeDashoffset = `-${length}`;
-  //     pathRef.current.getBoundingClientRect();
-  //     // Adding ease-in-out to the transition
-  //     pathRef.current.style.transition = 'stroke-dashoffset 10s ease-in-out';
-  //     pathRef.current.style.strokeDashoffset = `${length / 2.06}`;
-  //   }
-
-  // }, []);
 
   return (
     <svg
