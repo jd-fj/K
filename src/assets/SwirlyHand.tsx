@@ -9,14 +9,15 @@ const SwirlyHand = () => {
     // Logic for pathRef
     if (pathRef.current) {
       const length = pathRef.current.getTotalLength();
+      console.log("path1 length:", length)
       pathRef.current.style.strokeDasharray = `${length}`;
       pathRef.current.style.strokeDashoffset = `${length}px`;
       pathRef.current.style.setProperty("--path-length", `${length}px`);
     }
 
-    // Logic for pathRef2 (if needed later)
     if (pathRef2.current) {
       const length = pathRef2.current.getTotalLength();
+      console.log("path2 length:", length)
       pathRef2.current.style.strokeDasharray = `${length}`;
       pathRef2.current.style.strokeDashoffset = `${length}px`;
       pathRef2.current.style.setProperty("--path-length", `-${length}px`);
