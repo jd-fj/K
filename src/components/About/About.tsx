@@ -54,8 +54,8 @@ const About: FunctionComponent = () => {
           />
         </div>
       </div>
-      <div className="flex justify-end mr-[33%] sm:mr-[58%] mb-5">
-        <Buddah />
+      <div className="flex justify-end mr-[33%] sm:mr-[58%] mb-16">
+        <Buddah className="sm:h-10v sm:w-10v h-12v w-12v"/>
       </div>
     </>
   );
