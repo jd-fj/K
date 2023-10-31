@@ -1,6 +1,7 @@
+/* css */
 .swirly-hand-animation .forward {
   animation: 
-    fillColor 15s ease-in-out 6s forwards;
+    fillColor 18s linear 6s forwards;
 }
 
 @keyframes fillColor {
@@ -10,26 +11,26 @@
   }
   15% {
     fill: #fcb7b1; /* red */
-    fill-opacity: .75;
+    fill-opacity: .9;
   }
   30% {
     fill: #f9c794; /* orange */
-    fill-opacity: .80;
+    fill-opacity: .9;
   }
   45% {
     fill: #fff99f; /* Yellow */
-    fill-opacity: 1;
+    fill-opacity: .9;
   }
   60% {
     fill: #c9e094; /* green */
-    fill-opacity: .80;
+    fill-opacity: .9;
   }
   75% {
     fill: #99ccdd; /* blue */
-    fill-opacity: .75;
+    fill-opacity: .9;
   }
   90% {
     fill: #d3b2de; /* purple */
-    fill-opacity: .5;
+    fill-opacity: .9;
   }
 }
