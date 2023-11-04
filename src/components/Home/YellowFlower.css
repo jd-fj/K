@@ -1,7 +1,7 @@
 /* css */
 .swirly-hand-animation .forward {
   animation: 
-    fillColor 18s linear 6s forwards;
+    fillColor 12s linear 6s forwards;
 }
 
 @keyframes fillColor {
