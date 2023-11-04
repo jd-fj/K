@@ -8,7 +8,7 @@ const About: FunctionComponent = () => {
     <>
       <div
         id="parentDiv"
-        className="flex flex-col-reverse md:flex-row md:mt-20 mt-0 gap-[6%] justify-center "
+        className="flex flex-col-reverse md:flex-row md:mt-16 mt-0 gap-[6%] justify-center "
       >
         <div
           id="aboutText"

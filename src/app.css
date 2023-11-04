@@ -4,8 +4,8 @@ body {
   font-family: 'Baloo 2', cursive;
   overflow: auto;
   position: relative; 
-  background-image: url('../src/assets/texch.png');
-  background-size: 30%; 
+  background-image: url('../src/assets/BG_mobile.png');
+  background-size: cover;
 }
 
 #NavLinks {
@@ -14,16 +14,14 @@ body {
   font-size: clamp(1.5em, 2vw, 5em);
 }
 
-#homeLink {
-  font-size: clamp(.35em, 1vw, 2em);
-}
-
-h1 {
-  color: #231f20; /* This is the text fill color */
-  -webkit-text-stroke-width: .25px; /* Stroke width */
-  -webkit-text-stroke-color: #c9e094; /* Stroke color, in this case, red */
-}
-
 p {
   color: #3f2a1c;
+}
+
+
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../src/assets/BG_desktop.webp');
+  }
 }

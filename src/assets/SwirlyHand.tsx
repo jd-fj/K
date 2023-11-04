@@ -1,11 +1,11 @@
 // SwirlyHand.tsx
-import { useEffect, useRef } from "preact/hooks";
+import { useLayoutEffect, useRef } from "preact/hooks";
 
 const SwirlyHand = () => {
   const pathRef = useRef<SVGPathElement>(null);
   const pathRef2 = useRef<SVGPathElement>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (pathRef.current) {
       const length = pathRef.current.getTotalLength();
       console.log("path1 l: ", length)
