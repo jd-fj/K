@@ -34,3 +34,5 @@ prompt.*
 *.svg
 assets/
 package-lock.json
+
+save/
