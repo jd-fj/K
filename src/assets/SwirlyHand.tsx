@@ -5,76 +5,30 @@ const SwirlyHand = () => {
   const pathRef = useRef<SVGPathElement>(null);
   const pathRef2 = useRef<SVGPathElement>(null);
 
-  // useLayoutEffect(() => {
-    
-  //   if (pathRef.current) {
-  //     const length = pathRef.current.getTotalLength();
-  //     console.log("path1 l: ", length)
-  //     pathRef.current.style.strokeDasharray = `${length} ${length}`;
-  //     pathRef.current.style.strokeDashoffset = `${length}`;
-  //     pathRef.current.getBoundingClientRect(); 
-  //     // Adding ease-in-out to the transition
-  //     pathRef.current.style.transition = 'stroke-dashoffset 6s ease-in-out';
-  //     pathRef.current.style.strokeDashoffset = `${length / 2.061}`;
-  //   }
-
-  //   if (pathRef2.current) {
-  //     const length = pathRef2.current.getTotalLength();
-  //     console.log("path2 l: ", length)
-  //     pathRef2.current.style.strokeDasharray = `${length} ${length}`;
-  //     pathRef2.current.style.strokeDashoffset = `-${length}`;
-  //     pathRef2.current.getBoundingClientRect();
-  //     // Adding ease-in-out to the transition
-  //     pathRef2.current.style.transition = "stroke-dashoffset 6s ease-in-out";
-  //     pathRef2.current.style.strokeDashoffset = `-${length / 1.943}`;
-  //   }
-  // });
   useLayoutEffect(() => {
-    // Function to start the animation
-    const startAnimation = () => {
-      if (pathRef.current) {
-        const length = pathRef.current.getTotalLength();
-        console.log("path1 l: ", length);
-        pathRef.current.style.strokeDasharray = `${length} ${length}`;
-        pathRef.current.style.strokeDashoffset = `${length}`;
-        pathRef.current.getBoundingClientRect();
-        // Adding ease-in-out to the transition
-        pathRef.current.style.transition = 'stroke-dashoffset 6s ease-in-out';
-        pathRef.current.style.strokeDashoffset = `${length / 2.061}`;
-      }
-  
-      if (pathRef2.current) {
-        const length = pathRef2.current.getTotalLength();
-        console.log("path2 l: ", length);
-        pathRef2.current.style.strokeDasharray = `${length} ${length}`;
-        pathRef2.current.style.strokeDashoffset = `-${length}`;
-        pathRef2.current.getBoundingClientRect();
-        // Adding ease-in-out to the transition
-        pathRef2.current.style.transition = "stroke-dashoffset 6s ease-in-out";
-        pathRef2.current.style.strokeDashoffset = `-${length / 1.943}`;
-      }
-    };
-  
-    // Function to load background image and start animation
-    const loadBackgroundAndStartAnimation = (imagePath: string) => {
-      const bgImage = new Image();
-      bgImage.src = imagePath;
-      bgImage.onload = startAnimation;
-    };
-  
-    // Decide which image to load based on screen width
-    const screenWidth = window.innerWidth;
-    const desktopBgPath = '../src/assets/BG_desktop.webp';
-    const mobileBgPath = '../src/assets/BG_mobile.webp';
-  
-    if (screenWidth >= 768) {
-      loadBackgroundAndStartAnimation(desktopBgPath);
-    } else {
-      loadBackgroundAndStartAnimation(mobileBgPath);
+    
+    if (pathRef.current) {
+      const length = pathRef.current.getTotalLength();
+      console.log("path1 l: ", length)
+      pathRef.current.style.strokeDasharray = `${length} ${length}`;
+      pathRef.current.style.strokeDashoffset = `${length}`;
+      pathRef.current.getBoundingClientRect(); 
+      // Adding ease-in-out to the transition
+      pathRef.current.style.transition = 'stroke-dashoffset 6s ease-in-out';
+      pathRef.current.style.strokeDashoffset = `${length / 2.061}`;
     }
-  
-  }, []); // Empty dependency array ensures this effect runs only once after the initial render
-  
+
+    if (pathRef2.current) {
+      const length = pathRef2.current.getTotalLength();
+      console.log("path2 l: ", length)
+      pathRef2.current.style.strokeDasharray = `${length} ${length}`;
+      pathRef2.current.style.strokeDashoffset = `-${length}`;
+      pathRef2.current.getBoundingClientRect();
+      // Adding ease-in-out to the transition
+      pathRef2.current.style.transition = "stroke-dashoffset 6s ease-in-out";
+      pathRef2.current.style.strokeDashoffset = `-${length / 1.943}`;
+    }
+  });
 
   return (
     <svg
