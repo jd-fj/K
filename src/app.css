@@ -4,8 +4,15 @@ body {
   font-family: 'Baloo 2', cursive;
   overflow: auto;
   position: relative; 
-  background-image: url('../src/assets/BG_mobile.png');
+  background-image: url('../src/assets/BG_mobile.webp');
   background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../src/assets/BG_desktop.webp');
+  }
 }
 
 #NavLinks {
@@ -18,10 +25,3 @@ p {
   color: #3f2a1c;
 }
 
-
-
-@media (min-width: 768px) {
-  body {
-    background-image: url('../src/assets/BG_desktop.webp');
-  }
-}
