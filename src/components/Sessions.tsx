@@ -2,7 +2,7 @@ import { FunctionComponent } from "preact";
 
 const Sessions: FunctionComponent = () => {
   return (
-    <div id="ParentSessionsDiv" className="text-center mt-2">
+    <div id="ParentSessionsDiv" className="text-center mt-2 mx-auto lg:max-w-2xl">
       <div id="ChildDiv" className="mx-1">
         <h1 className="text-3xl" style={{ 
     textShadow: `
@@ -38,7 +38,7 @@ const Sessions: FunctionComponent = () => {
           Chakra System, and Crystal Connection.
         </p>
         <p className="text-xl mb-2 mt-2">60 minute $90</p>
-        <p className="mx-6 leading-tight">redacted</p>
+        <p className="mx-6 leading-tight">Sessions are held out of my home in the Renton Highlands.</p>
         <p className="mb-4 mx-6 leading-tight">
           To schedule, please send me a message of your preferred date(s),
           time(s), and type of session interested in ~
