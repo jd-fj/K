@@ -31,7 +31,8 @@ const About: FunctionComponent = () => {
           <p className="-mb-1">Tai Chi</p>
           <p className="-mb-1">Internal Family Systems</p>
           <p className="-mb-1">Non-violent Communication</p>
-          <p className="mb-4">Crystal Connection</p>
+          <p className="-mb-1">Crystal Connection</p>
+          <p className="mb-4">Meditation</p>
 
           <p className="mb-1">
             I feel very grateful for the wisdom passed down from my Therapists &

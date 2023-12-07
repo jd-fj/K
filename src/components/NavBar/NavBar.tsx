@@ -12,14 +12,14 @@ const navLinks = [
 const NavBar: FunctionalComponent = () => {
   return (
     <>
-      <Link href="/" id="HomeLink" className="flex mx-2 text-center xl:mx-[400px] lg:mx-[200px] md:mx-[100px] mx-auto -mb-5">
+      <Link href="/" id="HomeLink" className="flex mx-2 text-center xl:mx-[400px] lg:mx-[200px] md:mx-[100px] sm:mx-[50px] sm:-mb-12 sm:-mt-8 -mb-[4em] -mt-[3em]">
         <Full />
       </Link>
 
 {/* Navigation Links */}
 <div
     id="NavLinks"
-    className="flex h-[50px] justify-center md:space-x-[5em] sm:mb-1 -mb-1 w-full items-center " // added h-[50px] and items-center
+    className="flex h-[50px] justify-center md:space-x-[5em] sm:mb-1 -mb-1 w-full items-center text-" // added h-[50px] and items-center
 >
     {navLinks.map(([title, url]) => (
         <Link

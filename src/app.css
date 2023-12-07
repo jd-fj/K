@@ -8,7 +8,6 @@ body {
   background-size: cover;
 }
 
-
 @media (min-width: 768px) {
   body {
     background-image: url('../src/assets/BG_desktop.webp');
@@ -25,3 +24,6 @@ p {
   color: #3f2a1c;
 }
 
+h1 {
+  color: #3f2a1c;
+}
