@@ -26,3 +26,25 @@ dist-ssr
 # Secrets
 .env
 prompt.*
+
+# General
+**/.git
+**/.gitignore
+**/.dockerignore
+**/Dockerfile
+**/README.md
+**/*.md
+**/node_modules
+**/npm-debug.log
+**/yarn-error.log
+
+# Specific to your project
+
+# Development tools
+**/.editorconfig
+**/.vscode
+**/.idea
+
+# Operating system files
+.DS_Store
+Thumbs.db
