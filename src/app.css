@@ -20,10 +20,6 @@ body {
   font-size: clamp(1.5em, 2vw, 5em);
 }
 
-p {
-  color: #3f2a1c;
-}
-
-h1 {
+p, h1, h2 {
   color: #3f2a1c;
 }

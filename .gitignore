@@ -33,6 +33,7 @@ prompt.*
 /dist
 *.svg
 assets/
-package-lock.json
+# package-lock.json
 
 save/
+.git/
