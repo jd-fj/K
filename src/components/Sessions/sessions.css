@@ -1,0 +1,15 @@
+
+/* sessions.css */
+
+.text-shadow-effect {
+    text-shadow:
+      1px 1px 0 #c9e094,
+      -1px -1px 0 #c9e094,
+      1px -1px 0 #c9e094,
+      -1px 1px 0 #c9e094,
+      1px 0px 0 #c9e094,
+      0px 1px 0 #c9e094,
+      -1px 0px 0 #c9e094,
+      0px -1px 0 #c9e094;
+  }
+  
