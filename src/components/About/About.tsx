@@ -30,7 +30,7 @@ const About: FunctionComponent = () => {
           <p className="-mb-1 lg:text-lg">Breathwork</p>
           <p className="-mb-1 lg:text-lg">Tai Chi</p>
           <p className="-mb-1 lg:text-lg">Internal Family Systems</p>
-          <p className="-mb-1 lg:text-lg">Non-violent Communication</p>
+          <p className="-mb-1 lg:text-lg">Nonviolent Communication</p>
           <p className="-mb-1 lg:text-lg">Crystal Connection</p>
           <p className="mb-4 lg:text-lg">Meditation</p>
 

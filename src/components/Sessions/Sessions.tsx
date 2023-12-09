@@ -40,14 +40,11 @@ const Sessions: FunctionComponent = () => {
           </h2>
           <p className="mx-6 leading-tight lg:text-lg">
             One on One or Partner Sessions that may incorporate Breathwork,
-            Meditation, Yoga Postures, learnings on </p>
-          <p className="mx-6 leading-tight lg:text-lg">Non-Violent Communication,
-            the Chakra System
-          </p>
-          <p className="mx-6 leading-tight lg:text-lg">& Crystal Connection.</p>
+            Meditation, Yoga Postures, learnings on Nonviolent Communication,
+            the Chakra System & Crystal Connection.</p>
           <p className="text-xl lg:text-2xl mt-2 mb-4 lg:mb-8">60 minute $90</p>
           <p className="mx-6 mb-2 leading-tight lg:text-lg">
-            Sessions are held out of my home in the Renton Highlands
+            Sessions are held out of my home in the Renton Highlands.
           </p>
           <p className="mb-4 mx-6 leading-tight lg:text-lg">
             To schedule, please send me a message {"☺︎"}
@@ -59,8 +56,8 @@ const Sessions: FunctionComponent = () => {
           <h1 className="text-shadow-effect text-3xl mb-1 lg:mb-6">
             <b>Contact</b>
           </h1>
-          <p className="mx-6 leading-tight lg:text-lg lg:mb-4">Text if you have my number.</p>
-          <p className="mx-6 leading-tight lg:text-lg lg:mb-4">yellowflowerholistichealing@gmail.com</p>
+          <p className="mx-6 leading-tight lg:text-lg">Text if you have my number.</p>
+          <p className="mx-6 leading-tight lg:text-lg">yellowflowerholistichealing@gmail.com</p>
           <p className="mx-6 mb-4 leading-tight lg:text-lg">@yellowflowerholistichealing</p>
           <img className="hide-on-desktop mx-auto mb-16 block lg:hidden" src={TwoDaisies} />
           <img className="hide-on-mobile mx-auto hidden lg:block w-[14em] mt-12" src={LucyOutside} />
