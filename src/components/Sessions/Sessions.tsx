@@ -19,7 +19,6 @@ const Sessions: FunctionComponent = () => {
           <img className="hide-on-mobile ml-auto hidden lg:block" src={TwoDaisies} />
         </div>
 
-
         {/* COLUMN 2 */}
         <div id="Column2" className="lg:w-1/3 mx-1">
           <h1 className="text-shadow-effect text-3xl lg:mb-4">
@@ -55,7 +54,6 @@ const Sessions: FunctionComponent = () => {
           </p>
         </div>
 
-
         {/* COLUMN 3 */}
         <div id="Column3" className="lg:w-1/4">
           <h1 className="text-shadow-effect text-3xl mb-1 lg:mb-6">
@@ -67,7 +65,6 @@ const Sessions: FunctionComponent = () => {
           <img className="hide-on-desktop mx-auto mb-16 block lg:hidden" src={TwoDaisies} />
           <img className="hide-on-mobile mx-auto hidden lg:block w-[14em] mt-12" src={LucyOutside} />
         </div>
-
 
 
       </div>
