@@ -12,13 +12,13 @@ const Reiki: FunctionComponent = () => {
 
         <div id="ReikiSection2" className="mb-4 text-center mx-4">
           <h1 className="text-shadow-effect text-3xl">What is Reiki?</h1>
-          <p className="mb-4 text-left">
+          <p className="mb-4 text-left text-lg">
             Reiki is a hands-on healing practice that uses qi to promote the body's natural ability to heal itself. Qi (or Chi) is the movement of energy within and around all living things. It stems from the palm of the hands to stimulate natural healing around the Aura and within the body to create connectedness with the Self. </p>
-          <p className="mb-4 text-left">
+          <p className="mb-4 text-left text-lg">
             Anyone can embrace Reiki and receive many benefits that can enhance day to day living. For some Reiki will complement spiritual and personal growth; others will turn to it as a holistic approach to healing illnesses and physical ailments; and for all it will bring deep relaxation while relieving everyday stresses & anxieties.</p>
         </div>
 
-        <div id="ReikiSection3" className="mb-4 text-center font-bold mx-[2em] text-md">
+        <div id="ReikiSection3" className="mb-4 text-center font-bold mx-[2em] text-lg">
           <h1 className="text-shadow-effect text-3xl">Benefits of Reiki</h1>
           <p className="mb-4">Physical, Mental, Emotional
             & Spiritual Healing. </p>
@@ -38,7 +38,7 @@ const Reiki: FunctionComponent = () => {
             & Heal Past Traumas.</p>
         </div>
 
-        <div id="ReikiSection4" className="mb-4 text-left mx-4">
+        <div id="ReikiSection4" className="mb-4 text-left text-lg mx-4">
           <p>
             When we are in touch with the Qi energy and break down the blockages in our Chakra System, we feel increasingly whole in ourselves & in the whole creation.</p>
         </div>

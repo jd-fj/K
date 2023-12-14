@@ -12,36 +12,36 @@ const About: FunctionComponent = () => {
       >
         <div
           id="aboutText"
-          className="flex-1 md:ml-[5%] lg:ml-[20%] text-center md:mx-0 mx-10 "
+          className="flex-1 md:ml-[5%] lg:ml-[20%] text-center md:mx-0 mx-6 "
         >
-          <p className="mb-4 -mt-4 lg:text-lg">Hello & thank you for visiting!</p>
+          <p className="mb-4 -mt-4 lg:text-lg text-lg">Hello & thank you for visiting!</p>
 
-          <p className="mb-4 lg:text-lg">
+          <p className="mb-4 lg:text-lg text-lg">
             My name is Kalee and I am truly blissed to be able to share with you
             the warmth and healing of Reiki energy and Mindfulness tools that
             can enhance compassion for the Self and others. Throughout my
             journey, I have delved into, practiced & healed from ~
           </p>
 
-          <p className="-mb-1 lg:text-lg">Reiki</p>
-          <p className="-mb-1 lg:text-lg">Chakra Work</p>
-          <p className="-mb-1 lg:text-lg">Hatha Yoga</p>
-          <p className="-mb-1 lg:text-lg">Buddhism</p>
-          <p className="-mb-1 lg:text-lg">Breathwork</p>
-          <p className="-mb-1 lg:text-lg">Tai Chi</p>
-          <p className="-mb-1 lg:text-lg">Internal Family Systems</p>
-          <p className="-mb-1 lg:text-lg">Nonviolent Communication</p>
-          <p className="-mb-1 lg:text-lg">Crystal Connection</p>
-          <p className="mb-4 lg:text-lg">Meditation</p>
+          <p className="-mb-1 lg:text-lg text-lg">Reiki</p>
+          <p className="-mb-1 lg:text-lg text-lg">Chakra Work</p>
+          <p className="-mb-1 lg:text-lg text-lg">Hatha Yoga</p>
+          <p className="-mb-1 lg:text-lg text-lg">Buddhism</p>
+          <p className="-mb-1 lg:text-lg text-lg">Breathwork</p>
+          <p className="-mb-1 lg:text-lg text-lg">Tai Chi</p>
+          <p className="-mb-1 lg:text-lg text-lg">Internal Family Systems</p>
+          <p className="-mb-1 lg:text-lg text-lg">Nonviolent Communication</p>
+          <p className="-mb-1 lg:text-lg text-lg">Crystal Connection</p>
+          <p className="mb-4 lg:text-lg text-lg">Meditation</p>
 
-          <p className="mb-4 lg:text-lg">
+          <p className="mb-4 lg:text-lg text-lg">
             I feel very grateful for the wisdom passed down from my Therapists &
             Spiritual Teachers and am excited to participate in the teachings
             and healing of others.
           </p>
-          <p className="lg:text-lg">Please reach out to connect.</p>
+          <p className="lg:text-lg text-lg">Please reach out to connect.</p>
 
-          <p className="lg:text-lg">Namaste</p>
+          <p className="lg:text-lg text-lg">Namaste</p>
         </div>
 
         <div
@@ -51,7 +51,7 @@ const About: FunctionComponent = () => {
           <img
             src={about}
             alt="reiki practitioner pleasantly standing in the daylight"
-            className="sm:-mx-2.5 object-contain max-w-full flex-shrink-0 mb-6"
+            className="sm:-mx-2.5 object-contain max-w-full flex-shrink-0 mb-4"
           />
         </div>
       </div>
