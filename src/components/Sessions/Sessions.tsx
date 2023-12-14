@@ -1,7 +1,6 @@
 import { FunctionComponent } from "preact";
 import TwoDaisies from "../../assets/two-daisies.png";
 import LucyOutside from "../../assets/lucy-outside.jpg";
-import "./sessions.css";
 
 // hide-on-desktop: block lg:hidden
 // hide-on-mobile: hidden lg:block

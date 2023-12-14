@@ -3,7 +3,7 @@ body {
   font-family: 'Baloo 2', cursive;
   overflow: auto;
   position: relative; 
-  background-image: url('../src/assets/BG_mobile.webp');
+  /* background-image: url('../src/assets/BG_mobile.webp'); */
   background-size: cover;
 }
 
@@ -21,4 +21,16 @@ body {
 
 p, h1, h2 {
   color: #3f2a1c;
+}
+
+.text-shadow-effect {
+  text-shadow:
+    1px 1px 0 #c9e094,
+    -1px -1px 0 #c9e094,
+    1px -1px 0 #c9e094,
+    -1px 1px 0 #c9e094,
+    1px 0px 0 #c9e094,
+    0px 1px 0 #c9e094,
+    -1px 0px 0 #c9e094,
+    0px -1px 0 #c9e094;
 }
