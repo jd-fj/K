@@ -6,7 +6,8 @@ const navLinks = [
   ["Reiki", "/reiki"],
   ["Sessions", "/sessions"],
   ["About", "/about"],
-  ["Palette", "/palette"],
+  // ["Palette", "/palette"],
+  ["Resources", "/resources"],
 ];
 
 const NavBar: FunctionalComponent = () => {

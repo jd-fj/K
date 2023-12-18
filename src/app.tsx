@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Reiki from "./components/Reiki";
 import Sessions from "./components/Sessions/Sessions";
 import Palette from "./components/Palette/Palette";
+import Resources from "./components/Resources/Resources";
 import { useFairyDustCursor } from "./cursor/useFairyDustCursor";
 
 export function App() {
@@ -25,7 +26,8 @@ export function App() {
           <About path="/about" />
           <Reiki path="/reiki" />
           <Sessions path="/sessions" />
-          <Palette path="/palette" />
+          {/* <Palette path="/palette" /> */}
+          <Resources path="/resources" />
         </Router>
     </>
   );
