@@ -71,8 +71,8 @@ const Sessions: FunctionComponent = () => {
           </p>
           <p className="mx-6 leading-tight text-lg">Text if you have my number.</p>
           <p className="mx-6 leading-tight text-lg">yellowflowerholistichealing@gmail.com</p>
-          <p className="mx-6 mb-4 leading-tight text-lg mb-12">@yellowflowerholistichealing</p>
-          <img className="hide-on-desktop mx-auto mb-16 block lg:hidden" src={TwoDaisies} />
+          <p className="mx-6 mb-4 leading-tight text-lg">@yellowflowerholistichealing</p>
+          <img className="hide-on-desktop mx-auto mb-16 block lg:hidden mt-12" src={TwoDaisies} />
           <img className="hide-on-mobile mx-auto hidden lg:block w-[16em] mt-12" src={LucyOutside} />
         </div>
 
