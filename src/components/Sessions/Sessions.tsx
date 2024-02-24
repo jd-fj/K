@@ -20,8 +20,9 @@ const Sessions: FunctionComponent = () => {
 
         {/* COLUMN 2 */}
         <div id="Column2" className="lg:w-1/3 mx-1 mb-4">
-          <p className="mx-6 leading-tight text-lg mb-6">
-            Reiki is a cumulative healing process as each treatment builds upon the previous one received. A series of sessions are highly recommended. Allow 90 minutes per session.
+          <p className="mx-6 leading-tight text-lg mt-5">
+            Reiki is a cumulative healing process as each treatment builds upon the previous one received. A series of sessions is highly recommended.</p>
+          <p className="mx-6 leading-tight text-lg mb-5"> Allow 90 minutes per session.
           </p>
           <h1 className="text-shadow-effect text-3xl lg:mb-4">
             <b className="mb-1 lg:mb-4">Sessions</b>
