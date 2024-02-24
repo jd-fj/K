@@ -29,6 +29,7 @@ const About: FunctionComponent = () => {
           <p className="-mb-1 lg:text-lg text-lg">Buddhism</p>
           <p className="-mb-1 lg:text-lg text-lg">Breathwork</p>
           <p className="-mb-1 lg:text-lg text-lg">Tai Chi</p>
+          <p className="-mb-1 lg:text-lg text-lg">Mindfulness Coaching</p>
           <p className="-mb-1 lg:text-lg text-lg">Internal Family Systems</p>
           <p className="-mb-1 lg:text-lg text-lg">Nonviolent Communication</p>
           <p className="-mb-1 lg:text-lg text-lg">Crystal Connection</p>
@@ -36,8 +37,7 @@ const About: FunctionComponent = () => {
 
           <p className="mb-4 lg:text-lg text-lg">
             I feel very grateful for the wisdom passed down from my Therapists &
-            Spiritual Teachers and am excited to participate in the teachings
-            and healing of others.
+            Spiritual Teachers, and am very happy to be participating in the teachings and healing of others. Please reach out to connect.
           </p>
           <p className="lg:text-lg text-lg">Please reach out to connect.</p>
 
